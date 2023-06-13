@@ -34,4 +34,5 @@ document.querySelectorAll(".reveal")
 
     elem.innerHTML = " ";
     elem.appendChild(spanParent);
+    
 })
