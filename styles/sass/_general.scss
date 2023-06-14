@@ -6,13 +6,17 @@
 }
 
 @font-face {
-    font-family: "Light";
+    font-family: "Gilroy";
     /*Can be any text*/
-    src: local("Light"),
+    src: local("Gilroy"),
         url("./styles/fonts/Gilroy-Light.otf") format("opentype");
 }
 
 
 html {
-    font-family: "Light";
+    font-family: "Gilroy";
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+    /* basic font size = 10px */
 }

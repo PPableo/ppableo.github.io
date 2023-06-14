@@ -14,14 +14,27 @@
     height: 100vh;
     background-color: #111;
     color: #fff;
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 4vw;
+        font-weight: 500;
+        span {
+            font-family: 'Mazius';
+        }
+    }
     #topheading {
         position: absolute;
         top: 5%;
         left: 50%;
         transform: translate(-50%, 0);
         h5 {
+            margin: 0;
+            text-align: center;
             text-transform: uppercase;
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 300;
         }
     }
@@ -53,17 +66,17 @@
     background-color: #dadada;
 }
 
-h1 {
-    background-color: red;
-    margin: 0;
-    .parent {
-        display: block;
-        overflow: hidden;
-        background-color: red;
-        .child {
-            display: block;
-            transform: translate(0, 100%);
-            background-color: yellow;
-        }
-    }
-}
+// h1 {
+//     background-color: red;
+//     margin: 0;
+//     .parent {
+//         display: block;
+//         overflow: hidden;
+//         background-color: red;
+//         .child {
+//             display: block;
+//             transform: translate(0, 100%);
+//             background-color: yellow;
+//         }
+//     }
+// }
