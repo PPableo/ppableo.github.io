@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Mazius";
+  /*Can be any text*/
+  src: local("Mazius"), url("../fonts/Mazius Display Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Light";
+  /*Can be any text*/
+  src: local("Light"), url("./styles/fonts/Gilroy-Light.otf") format("opentype");
+}
+html {
+  font-family: "Light";
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -228,14 +242,33 @@ html {
 
 #main {
   width: 100%;
-  height: 100%;
-  background-color: red;
 }
 
-#fs {
+#loader {
   width: 100%;
-  height: 100%;
-  background-color: black;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+}
+#loader #topheading {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+#loader #topheading h5 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#green {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 0vh;
+  background-color: #14cf93;
 }
 
 #elem {

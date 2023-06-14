@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Mazius";
+    /*Can be any text*/
+    src: local("Mazius"),
+        url("../fonts/Mazius\ Display\ Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Light";
+    /*Can be any text*/
+    src: local("Light"),
+        url("./styles/fonts/Gilroy-Light.otf") format("opentype");
+}
+
+
+html {
+    font-family: "Light";
+}

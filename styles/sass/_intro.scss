@@ -3,16 +3,37 @@
     // when using position: relative it is able to move relative to it's original position, or stacked box area
     width: 100%;
     // takes up 100% of it's block. remember that there are different types of display. display block will take up left to right of where it's being stacked
-    height: 100%;
+    // height: 100%;
     // unlike width, height: 100% does not represent the browser's height, it is based on an element's parent's height, and if the parent element has no set height, the element will not grow.
     // If we would like our elements to take up 100% of the browser's height, using the viewport height unit to set height: 100vh is a better choice.
-    background-color: red;
+    // background-color: red;
 }
 
-#fs {
+#loader {
     width: 100%;
-    height: 100%;
-    background-color: black;
+    height: 100vh;
+    background-color: #111;
+    color: #fff;
+    #topheading {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        h5 {
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+}
+
+#green {
+    // when using position: absolute it's removed from the general flow or stacking of the page
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 0vh;
+    background-color: #14cf93;
 }
 
 #elem {

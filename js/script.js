@@ -1,13 +1,13 @@
 var tl = gsap.timeline();
 
 tl
-.to('#fs', {
+.to('#loader', {
     height: 0,
     duration: 2,
     ease: Expo.easeInOut
 })
 
-.to('#elem', {
+.to('#main', {
     height: "100%",
     duration: 2,
     delay: -2,
