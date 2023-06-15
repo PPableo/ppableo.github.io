@@ -2,14 +2,14 @@
     font-family: "Mazius";
     /*Can be any text*/
     src: local("Mazius"),
-        url("../fonts/Mazius\ Display\ Regular.otf") format("opentype");
+        url("/styles/fonts/Mazius\ Display\ Extraitalic.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Gilroy";
     /*Can be any text*/
     src: local("Gilroy"),
-        url("./styles/fonts/Gilroy-Light.otf") format("opentype");
+        url("/styles/fonts/Gilroy-Light.otf") format("opentype");
 }
 
 

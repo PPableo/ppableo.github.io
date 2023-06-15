@@ -14,22 +14,26 @@
     height: 100vh;
     background-color: #111;
     color: #fff;
+
     h1 {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         font-size: 4vw;
         font-weight: 500;
+
         span {
             font-family: 'Mazius';
         }
     }
+
     #topheading {
         position: absolute;
         top: 5%;
         left: 50%;
         transform: translate(-50%, 0);
+
         h5 {
             margin: 0;
             text-align: center;
@@ -49,22 +53,40 @@
     background-color: #14cf93;
 }
 
-#elem {
-    width: 100%;
-    // when using position: absolute it's removed from the general flow or stacking of the page
-    position: absolute;
-    bottom: 0;
-    height: 0px;
-    background-color: rgb(82, 162, 146);
+.reveal
+.parent {
+    display: block;
+    overflow: hidden;
 }
 
-#white {
-    width: 100%;
-    height: 0;
-    position: absolute;
-    bottom: 0;
-    background-color: #dadada;
+.reveal
+.parent
+.child {
+    display: block;
+    // transform: translate(-70%);
 }
+
+.parent .child span {
+    display: inline-block;
+    // word-spacing: 2rem;
+}
+// #elem {
+
+//     width: 100%;
+//     // when using position: absolute it's removed from the general flow or stacking of the page
+//     position: absolute;
+//     bottom: 0;
+//     height: 0px;
+//     background-color: rgb(82, 162, 146);
+// }
+
+// #white {
+//     width: 100%;
+//     height: 0;
+//     position: absolute;
+//     bottom: 0;
+//     background-color: #dadada;
+// }
 
 // h1 {
 //     background-color: red;
