@@ -44,15 +44,36 @@ revealToSpan();
 var tl = gsap.timeline();
 
 tl.from(".child span", {
-    x: "50%",
-    delay: 1,
-    stagger: .2,
-    duration: 1,
-    ease: Power3.easeInOut
-    });
+  x: 100,
+  delay: 1,
+  stagger: .2,
+  duration: 1.4,
+  ease: Power3.easeInOut,
+})
 
-    tl.to(".parent .child", {
-    y: "-100%",
-    duration: 1,
-    ease: Circ.easeInOut
-    });
+tl.to(".parent .child", {
+  y: "-100%",
+  duration: 1,
+  ease: Circ.easeInOut,
+});
+
+tl.to("#loader", {
+  height: 0,
+  duration: 1,
+  ease: Circ.easeInOut,
+});
+
+tl.to("#green", {
+  height: "100%",
+  top: 0,
+  duration: 1,
+  delay: -0.7,
+  ease: Circ.easeInOut,
+});
+
+tl.to("#green", {
+  height: "0%",
+  duration: 1,
+  delay: -0.4,
+  ease: Circ.easeInOut,
+});

@@ -255,6 +255,13 @@ html {
   color: #fff;
 }
 #loader h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -290,8 +297,14 @@ html {
 }
 
 .reveal .parent {
-  display: block;
-  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: hidden;
 }
 
 .reveal .parent .child {
