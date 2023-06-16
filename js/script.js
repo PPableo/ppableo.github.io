@@ -47,7 +47,7 @@ tl.from(".child span", {
   x: 100,
   delay: 1,
   stagger: .2,
-  duration: 1.4,
+  duration: 1.2,
   ease: Power3.easeInOut,
 })
 
