@@ -39,7 +39,19 @@ function revealToSpan() {
   });
 }
 
+function loaderAnimation() {
+
+}
+
 revealToSpan();
+// loaderAnimation();
+
+gsap.from("g path", {
+  strokeDasharray: 64.68521881103516,
+  strokeOffset: 64.68521881103516,
+  duration: 1,
+  ease: Power3
+})
 
 var tl = gsap.timeline();
 
