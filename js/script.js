@@ -40,52 +40,62 @@ function revealToSpan() {
 }
 
 function loaderAnimation() {
+  
+  var tl = gsap.timeline();
 
+  tl.from(".child span", {
+    x: 100,
+    delay: 1,
+    stagger: 0.2,
+    duration: 1.2,
+    ease: Power3.easeInOut,
+  });
+
+  tl.to(".parent .child", {
+    y: "-100%",
+    duration: 1,
+    ease: Circ.easeInOut,
+  });
+
+  tl.to("#loader", {
+    height: 0,
+    duration: 1,
+    ease: Circ.easeInOut,
+  });
+
+  tl.to("#green", {
+    height: "100%",
+    top: 0,
+    duration: 1,
+    delay: -0.7,
+    ease: Circ.easeInOut,
+  });
+
+  tl.to("#green", {
+    height: "0%",
+    duration: 1,
+    delay: -0.4,
+    ease: Circ.easeInOut,
+  });
 }
 
+// function animateSvg() {
+//   document.querySelectorAll("#Visual>g").forEach(function (e) {
+//     var character = e.childNodes[1].childNodes[1];
+
+//     character.style.strokeDasharray = character.getTotalLength() + "px";
+//     character.style.strokeDashoffset = character.getTotalLength() + "px";
+//   });
+
+//   gsap.to("#Visual>g>g>path, #Visual>g>g>polyline", {
+//     // strokeOffset: 0,
+//     strokeDashoffset: 0,
+//     duration: 2,
+//     ease: Circ.easeInOut,
+//     delay: 2,
+//   });
+// }
+
 revealToSpan();
-// loaderAnimation();
-
-gsap.from("g path", {
-  strokeDasharray: 64.68521881103516,
-  strokeOffset: 64.68521881103516,
-  duration: 1,
-  ease: Power3
-})
-
-var tl = gsap.timeline();
-
-tl.from(".child span", {
-  x: 100,
-  delay: 1,
-  stagger: .2,
-  duration: 1.2,
-  ease: Power3.easeInOut,
-})
-
-tl.to(".parent .child", {
-  y: "-100%",
-  duration: 1,
-  ease: Circ.easeInOut,
-});
-
-tl.to("#loader", {
-  height: 0,
-  duration: 1,
-  ease: Circ.easeInOut,
-});
-
-tl.to("#green", {
-  height: "100%",
-  top: 0,
-  duration: 1,
-  delay: -0.7,
-  ease: Circ.easeInOut,
-});
-
-tl.to("#green", {
-  height: "0%",
-  duration: 1,
-  delay: -0.4,
-  ease: Circ.easeInOut,
-});
+loaderAnimation();
+// animateSvg();
