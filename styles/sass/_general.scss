@@ -82,9 +82,9 @@ html {
     align-items: center;
     width: 100%;
     color: #333;
-    padding: 0 3vw;
+    padding: 0 7vw;
     padding-right: 12vw;
-    line-height: 1;
+    line-height: 1.2;
 
     &:nth-child(3) {
         margin-top: 0;
@@ -96,7 +96,7 @@ html {
     }
 
     h1 {
-        font-size: 11vw;
+        font-size: 10vw;
         font-weight: 600;
         margin: 0;
     }
@@ -106,11 +106,12 @@ html {
         font-size: 1.1rem;
         font-weight: 500;
         margin: 0;
+        
     }
 
     svg {
-        height: 100px;
-        margin: 0 02vw;
+        height: 8vw;
+        margin: 0 2.5vw;
     }
 
     path,

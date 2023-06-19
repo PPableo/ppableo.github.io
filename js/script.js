@@ -39,20 +39,25 @@ function revealToSpan() {
   });
 }
 
+function valueSetters() {
+  gsap.set("#nav a", { y: "-100%", opacity: 0 });
+  gsap.set("#home .parent .child", { y: "100%" });
+  gsap.set("#home .row img", { opacity: 0 });
+}
+
 function loaderAnimation() {
-  
   var tl = gsap.timeline();
 
-  tl.from(".child span", {
+  tl.from("#loader .child span", {
     x: 100,
     delay: 1,
     stagger: 0.2,
-    duration: 1.2,
+    duration: 1.4,
     ease: Power3.easeInOut,
   });
 
-  tl.to(".parent .child", {
-    y: "-100%",
+  tl.to("#loader .parent .child", {
+    y: "-110%",
     duration: 1,
     ease: Circ.easeInOut,
   });
@@ -67,15 +72,18 @@ function loaderAnimation() {
     height: "100%",
     top: 0,
     duration: 1,
-    delay: -0.7,
+    delay: -0.8,
     ease: Circ.easeInOut,
   });
 
   tl.to("#green", {
     height: "0%",
     duration: 1,
-    delay: -0.4,
+    delay: -0.5,
     ease: Circ.easeInOut,
+    onComplete: function () {
+      animateHomepage();
+    },
   });
 }
 
@@ -96,6 +104,31 @@ function loaderAnimation() {
 //   });
 // }
 
+function animateHomepage() {
+  var tl = gsap.timeline();
+
+  tl.to("#nav a", {
+    y: 0,
+    opacity: 1,
+    stagger: 0.05,
+    ease: Expo.easeInOut,
+  });
+
+  tl.to("#home .parent .child", {
+    y: 0,
+    stagger: 0.2,
+    duration: 2,
+    ease: Expo.easeInOut,
+  });
+
+  tl.to("#home .row img", {
+    delay: -.5,
+    opacity: 1,
+    ease: Expo.easeInOut,
+  });
+}
+
 revealToSpan();
+valueSetters();
 loaderAnimation();
 // animateSvg();
