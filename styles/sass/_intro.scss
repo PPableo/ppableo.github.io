@@ -10,6 +10,7 @@
 }
 
 #loader {
+    display: none;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -30,19 +31,13 @@
 
     }
 
-    .spice {
-        font-family: 'Mazius';
-        font-weight: 100;
-        font-style: italic;
-        color: #14cf93;
-    }
-
+    
     #topheading {
         position: absolute;
         top: 5%;
         left: 50%;
         transform: translate(-50%, 0);
-
+        
         h5 {
             margin: 0;
             text-align: center;
@@ -53,7 +48,15 @@
     }
 }
 
+.spice {
+    font-family: 'Mazius';
+    font-weight: 100;
+    font-style: italic;
+    color: #14cf93;
+}
+
 #green {
+    display: none;
     // when using position: absolute it's removed from the general flow or stacking of the page
     position: absolute;
     top: 100%;
