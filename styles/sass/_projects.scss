@@ -1,5 +1,5 @@
 #projects {
-    padding-top: 150px;
+    padding-top: 100px;
     // couldn't see h1 cause image was covering it
     position: relative;
     width: 100%;
@@ -16,6 +16,16 @@
         transform: rotate(-180deg);
         background-image: url('../../assets/rip.f6d7c4dd.svg');
         background-size: cover;
+    }
+
+    hr {
+        // can't see right now still needs to be adjusted
+        border: none;
+        height: 1px;
+        transform: scaleX(1);
+        width: 80%;
+        background-color: rgba(65,65,65,.3);
+        margin: 18vh 0 24vh 14%;
     }
 
     .workrow {
@@ -35,6 +45,23 @@
             width: 6vw;
             transform: rotate(90deg);
             stroke: rgba(65,65,65,.3);
+        }
+    }
+
+    #showcase {
+        margin-top: 6vw;
+        position: relative;
+        width: 100%;
+        
+        .container {
+            border-radius: 50px;
+            width: 65%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+
         }
     }
 }

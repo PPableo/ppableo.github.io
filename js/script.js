@@ -122,13 +122,23 @@ function animateHomepage() {
   });
 
   tl.to("#home .row img", {
-    delay: -.5,
+    delay: -0.5,
     opacity: 1,
     ease: Expo.easeInOut,
   });
 }
 
+function locoInt() {
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    // smooth: true,
+    // scrollFromAnywhere: true,
+  });
+  
+}
+
 revealToSpan();
 valueSetters();
 loaderAnimation();
+locoInt();
 // animateSvg();

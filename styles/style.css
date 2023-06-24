@@ -841,7 +841,7 @@ html {
 }
 
 #projects {
-  padding-top: 150px;
+  padding-top: 100px;
   position: relative;
   width: 100%;
   min-height: 70vh;
@@ -858,6 +858,15 @@ html {
           transform: rotate(-180deg);
   background-image: url("../../assets/rip.f6d7c4dd.svg");
   background-size: cover;
+}
+#projects hr {
+  border: none;
+  height: 1px;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  width: 80%;
+  background-color: rgba(65, 65, 65, 0.3);
+  margin: 18vh 0 24vh 14%;
 }
 #projects .workrow {
   display: -webkit-box;
@@ -881,4 +890,17 @@ html {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   stroke: rgba(65, 65, 65, 0.3);
+}
+#projects #showcase {
+  margin-top: 6vw;
+  position: relative;
+  width: 100%;
+}
+#projects #showcase .container {
+  border-radius: 50px;
+  width: 65%;
+  overflow: hidden;
+}
+#projects #showcase .container img {
+  width: 100%;
 }
