@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New New</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="main">
+    <div id="main" data-scroll-container>
         <div id="loader">
             <div id="topheading">
                 <h5 class="reveal">Developer Portfolio</h5>
@@ -20,15 +19,15 @@
             <h1 class="reveal"><span>Paul</span> <span class="spice">Pableo</span> <span>is</span> <span>a</span></h1>
         </div>
         <div id="green"></div>
-        <div id="home">
+        <div id="home" data-scroll-section>
             <!-- hover doesn't work in larger widths why? -->
             <div id="nav">
-                <a href="#">
+                <a href="#imagery">
                     Paul Pableo
                     <span id="line1" class="line"></span>
                     <span id="line2" class="line"></span>
                 </a>
-                <a href="#">
+                <a href="#projects">
                     Projects
                     <span id="line1" class="line"></span>
                     <span id="line2" class="line"></span>
@@ -170,7 +169,7 @@
                     <div class="img-cards"></div>
                 </div>
             </div>
-            <div id="projects">
+            <div id="projects" data-scroll-section data-scroll-speed="-1.5">
                 <!-- <hr> -->
                 <div class="workrow">
                     <h1>Feat P<span class="spice">r</span>ojects</h1>
@@ -181,10 +180,36 @@
                         <path d="M63 1.00001L63 63L0.999989 63" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </div>
-                <div id="showcase">
-                    <div class="container">
-                        <img data-scroll data-scroll-speed"-1.5" src="https://images.pexels.com/photos/15031641/pexels-photo-15031641/free-photo-of-model-posing-in-field.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="art">
+                <div id="showcase" >
+                    <div class="cnt cnt1">
+                        <img data-color="FFD68A" data-index="0" data-scroll data-scroll-speed="-1.5"
+                            src="https://images.pexels.com/photos/7480083/pexels-photo-7480083.jpeg"
+                            alt="multicultural photo">
+                    </div>
+                    <div class="cnt cnt2">
+                        <img data-color="edd5d5" data-index="0" data-scroll data-scroll-speed="-1.5"
+                            src="https://images.pexels.com/photos/11643390/pexels-photo-11643390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="multicultural photo">
+                    </div>
+                </div>
+            </div>
+            <div id="cursor">
+                <div>
+                    <div class="crow">
+                        <div class="ccircle"></div>
+                        <div class="ccapsule">Preview</div>
+                    </div>
+                    <div id="elem">
+                        <img src="https://images.pexels.com/photos/15031641/pexels-photo-15031641/free-photo-of-model-posing-in-field.jpeg"
+                            alt="Model Posing in Field">
+                        <img src="https://images.pexels.com/photos/15031643/pexels-photo-15031643/free-photo-of-woman-in-summer-outfit.jpeg"
+                            alt="Model Posing in Field">
+                        <img src="https://images.pexels.com/photos/15032223/pexels-photo-15032223/free-photo-of-low-angle-view-of-a-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Photo of a Hotel by a Lake">
+                        <img src="https://images.pexels.com/photos/15094168/pexels-photo-15094168/free-photo-of-brunette-among-plum-blossoms.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Brunette among Plum Blossoms">
+                        <img src="https://images.pexels.com/photos/15031202/pexels-photo-15031202/free-photo-of-canoe-on-lake-in-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&"
+                            alt="Canoe on Lake in Mountains">
                     </div>
                 </div>
             </div>
