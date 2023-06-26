@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     margin-top: 20vw;
+    margin-bottom: 20vw;
     padding: 7vw 7vw;
 
     .img-left {
@@ -33,6 +34,7 @@
             border-radius: 1vw;
             filter: grayscale(1);
             transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+            transform: translate3d(0px, -2.9846%, 0px) rotate(-2.4872deg);
 
             &:hover {
                 filter: grayscale(0);

@@ -150,7 +150,7 @@ function cardHoverEffect() {
     cnt.addEventListener("mouseleave", function(dets){
       document.querySelector("#cursor").children[showingImage.dataset.index].style.opacity = 0;
       showingImage.style.filter = "grayscale(0)";
-      document.querySelector("#projects").style.backgroundColor = "#f0f0f0"
+      document.querySelector("#projects").style.backgroundColor = "#f2f2f2"
     })
   });
 }
