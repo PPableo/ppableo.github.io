@@ -19,105 +19,135 @@
         background-size: cover;
     }
 
-    .services {
-        display: flex;
-        padding: 0 5vw;
-        justify-content: flex-start;
-        align-items: baseline;
+    .skills {
 
-        .o-ui-arrow {
-            // color: #333;
-            width: auto;
-            // transform: rotate(90deg);
-            stroke: rgba(65, 65, 65, .3);
-        }
-        
-        div {
-            margin-left: 10vw;
-            h1 {
-                font-size: 2.4vw;
-                letter-spacing: 1px;
-                font-weight: 500;
-                color: #333;
+        ul {
+            // width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            list-style: none;
+
+            li {
+                width: 20%;
+                text-align: center;
+                
+                i {
+                    font-size: 1vw;
+                    display: block;
+                }
+
+                p {
+                    margin-top: 10px;
+                    color: #333;
+                }
             }
+
         }
-
-        .serviceDetails {
-            display: block;
-            font-size: 2vw;
-            color: #a2a2a2;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-        }
-
-
     }
 
-    hr {
-        // can't see right now still needs to be adjusted
-        border: none;
-        height: 1px;
-        // transform: scaleX(1);
-        width: 80%;
-        background-color: rgba(65, 65, 65, .3);
-        margin: 15vh 0 15vh 14%;
-        
+}
+
+.services {
+    display: flex;
+    padding: 0 5vw;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    .o-ui-arrow {
+        // color: #333;
+        width: auto;
+        // transform: rotate(90deg);
+        stroke: rgba(65, 65, 65, .3);
     }
 
-    .workrow {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+    div {
+        margin-left: 10vw;
 
         h1 {
+            font-size: 2.4vw;
+            letter-spacing: 1px;
+            font-weight: 500;
             color: #333;
-            padding: 0 10vw;
-            font-size: 7vw;
-            font-weight: 600;
-        }
-
-        .o-ui-arrow {
-            // color: #333;
-            width: 6vw;
-            transform: rotate(90deg);
-            stroke: rgba(65, 65, 65, .3);
         }
     }
 
-    #showcase {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        margin-top: 6vw;
-        position: relative;
-        width: 100%;
-        padding: 0 5vw;
-
-        .cnt {
-            border-radius: 50px;
-            width: 55%;
-            overflow: hidden;
-
-            img {
-                transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
-                width: 100%;
-            }
-        }
-
-        .cnt1 {
-            width: 55%;
-        }
-
-        .cnt2 {
-            width: 28%;
-        }
-
-        .cnt3 {
-            width: 55%;
-            transform: translate(35%);
-        }
-
+    .serviceDetails {
+        display: block;
+        font-size: 2vw;
+        color: #a2a2a2;
+        text-transform: uppercase;
+        margin-bottom: 25px;
     }
+
+
+}
+
+hr {
+    // can't see right now still needs to be adjusted
+    border: none;
+    height: 1px;
+    // transform: scaleX(1);
+    width: 80%;
+    background-color: rgba(65, 65, 65, .3);
+    margin: 15vh 0 15vh 14%;
+
+}
+
+.workrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h1 {
+        color: #333;
+        padding: 0 10vw;
+        font-size: 7vw;
+        font-weight: 600;
+    }
+
+    .o-ui-arrow {
+        // color: #333;
+        width: 6vw;
+        transform: rotate(90deg);
+        stroke: rgba(65, 65, 65, .3);
+    }
+}
+
+#showcase {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 6vw;
+    position: relative;
+    width: 100%;
+    padding: 0 5vw;
+
+    .cnt {
+        border-radius: 50px;
+        width: 55%;
+        overflow: hidden;
+
+        img {
+            transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
+            width: 100%;
+        }
+    }
+
+    .cnt1 {
+        width: 55%;
+    }
+
+    .cnt2 {
+        width: 28%;
+    }
+
+    .cnt3 {
+        width: 55%;
+        transform: translate(35%);
+    }
+
+}
 
 }
 
@@ -187,27 +217,27 @@
                     0% {
                         opacity: 1;
                     }
-        
+
                     20% {
                         opacity: 1;
                     }
-        
+
                     21% {
                         opacity: 0;
                     }
-        
+
                     40% {
                         opacity: 0;
                     }
-        
+
                     60% {
                         opacity: 0;
                     }
-        
+
                     80% {
                         opacity: 0;
                     }
-        
+
                     100% {
                         opacity: 0;
                     }

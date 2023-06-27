@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div id="main" data-scroll-container>
+    <div id="main" data-scroll-container >
         <div id="loader">
             <div id="topheading">
                 <h5 class="reveal">Developer Portfolio</h5>
@@ -19,8 +19,7 @@
             <h1 class="reveal"><span>Paul</span> <span class="spice">Pableo</span> <span>is</span> <span>a</span></h1>
         </div>
         <div id="green"></div>
-        <div id="home" data-scroll-section>
-            <!-- hover doesn't work in larger widths why? -->
+        <div id="home">
             <div id="nav">
                 <a href="#imagery">
                     Paul Pableo
@@ -169,21 +168,65 @@
                     <div class="img-cards"></div>
                 </div>
             </div>
-            <div id="projects" data-scroll data-scroll-speed="-1.5">
+            <div id="projects">
                 <article class="services">
                     <svg class="o-ui-arrow" width="64" height="64" viewBox="0 0 64 64" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.10162 3.10156L62.9999 62.9999" stroke-linecap="round" stroke-linejoin="round">
                         </path>
                         <path d="M63 1.00001L63 63L0.999989 63" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <div>
-                            <span class="serviceDetails">Things I <span class="spice">Can</span> Help you<br>
-                                with.</span>
-                            <h1>Web &amp; mobile / UI&amp;Ux / Branding / front-end Development</h1>
-                        </div>
                     </svg>
+                    <div>
+                        <span class="serviceDetails">Things I <span class="spice">Can</span> Help you<br>
+                            with.</span>
+                        <h1>Web &amp; mobile  / Front-end Development / UI&amp;Ux</h1>
+                    </div>
                 </article>
-                <hr data-scroll>
+                <div class="skills">
+                        <ul>
+                            <li>
+                                <i class="fa-brands fa-html5"></i>
+                                <p>HTML5</p>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <p>CSS3</p>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-square-js"></i>
+                                <p>Javascript</p>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-react"></i>
+                                <p>React</p>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-sass"></i>
+                                <p>SASS</p>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-git-alt"></i>
+                                <p>Git Collaboration </p>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-vuejs"></i>
+                                <p>Vue.js</p>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-wordpress-simple"></i>
+                                <p>WordPress</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-gear"></i>
+                                <p>Rest API's</p>
+                            </li>
+                            <li>
+                                <i class="fa-thin fa-database"></i>
+                                <p>Firebase</p>
+                            </li>
+                        </ul>
+                </div>
+                <hr>
                 <div class="workrow">
                     <h1>Feat P<span class="spice">r</span>ojects</h1>
                     <svg class="o-ui-arrow" width="64" height="64" viewBox="0 0 64 64" fill="none"
@@ -206,8 +249,8 @@
                     </div>
                 </div>
                 <div id="showcase">
-                    <div class="cnt cnt3">
-                        <img data-color="FFD68A" data-index="0" data-scroll data-scroll-speed="-1.5"
+                    <div class="cnt cnt3" data-scroll data-scroll-speed="-1.5">
+                        <img 
                             src="https://images.pexels.com/photos/7480083/pexels-photo-7480083.jpeg"
                             alt="multicultural photo">
                     </div>
@@ -237,6 +280,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://kit.fontawesome.com/5d29a38529.js" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 

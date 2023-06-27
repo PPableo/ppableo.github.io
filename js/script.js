@@ -130,7 +130,7 @@ function animateHomepage() {
 
 function locoInt() {
   const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
+    el: document.querySelector('[data-scroll-container]'),
     smooth: true,
   });
   
@@ -155,9 +155,9 @@ function cardHoverEffect() {
   });
 }
 
-revealToSpan();
-valueSetters();
-loaderAnimation();
+// revealToSpan();
+// valueSetters();
+// loaderAnimation();
 cardHoverEffect();
-locoInt();
+// locoInt();
 // animateSvg();

@@ -778,7 +778,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-top: 20vw;
+  margin-top: 6vw;
   margin-bottom: 20vw;
   padding: 7vw 7vw;
 }
@@ -864,6 +864,32 @@ html {
           transform: rotate(-180deg);
   background-image: url("../../assets/rip.f6d7c4dd.svg");
   background-size: cover;
+}
+#projects .skills {
+  width: 100%;
+}
+#projects .skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+#projects .skills ul li {
+  width: 20%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #fff i;
+  border-display: block;
+  border-font-size: 24px;
+}
+#projects .skills ul li p {
+  margin-top: 10px;
 }
 #projects .services {
   display: -webkit-box;
