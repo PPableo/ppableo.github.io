@@ -132,6 +132,8 @@ function locoInt() {
   const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
+    // lerp: 0.6,
+    mobile: true,
   });
   
 }
@@ -159,5 +161,5 @@ function cardHoverEffect() {
 // valueSetters();
 // loaderAnimation();
 cardHoverEffect();
-// locoInt();
+locoInt();
 // animateSvg();

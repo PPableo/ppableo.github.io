@@ -590,7 +590,7 @@ html {
 
 #home {
   width: 100%;
-  height: 200vh;
+  height: 250vh;
   background-color: #f0f0f0;
 }
 #home #nav {
@@ -778,7 +778,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-top: 6vw;
+  margin-top: 15vw;
   margin-bottom: 20vw;
   padding: 7vw 7vw;
 }
@@ -866,32 +866,40 @@ html {
   background-size: cover;
 }
 #projects .skills {
-  width: 100%;
+  padding: 0 5vw;
+  margin: 20vw 5vw;
 }
-#projects .skills ul {
+#projects .skills .set {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
-#projects .skills ul li {
+#projects .skills .set li {
   width: 20%;
   text-align: center;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  border: 1px solid #fff i;
-  border-display: block;
-  border-font-size: 24px;
+  font-size: 1.2vw;
 }
-#projects .skills ul li p {
-  margin-top: 10px;
+#projects .skills .set li i {
+  font-size: 2.4vw;
+  color: #a2a2a2;
 }
-#projects .services {
+#projects .skills .set li p {
+  font-size: 1.5vw;
+  color: #a2a2a2;
+}
+
+.services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,34 +911,36 @@ html {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-#projects .services .o-ui-arrow {
+.services .o-ui-arrow {
   width: auto;
   stroke: rgba(65, 65, 65, 0.3);
 }
-#projects .services div {
+.services div {
   margin-left: 10vw;
 }
-#projects .services div h1 {
+.services div h1 {
   font-size: 2.4vw;
   letter-spacing: 1px;
   font-weight: 500;
   color: #333;
 }
-#projects .services .serviceDetails {
+.services .serviceDetails {
   display: block;
   font-size: 2vw;
   color: #a2a2a2;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-#projects hr {
+
+hr {
   border: none;
   height: 1px;
   width: 80%;
   background-color: rgba(65, 65, 65, 0.3);
   margin: 15vh 0 15vh 14%;
 }
-#projects .workrow {
+
+.workrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -941,19 +951,20 @@ html {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-#projects .workrow h1 {
+.workrow h1 {
   color: #333;
   padding: 0 10vw;
   font-size: 7vw;
   font-weight: 600;
 }
-#projects .workrow .o-ui-arrow {
+.workrow .o-ui-arrow {
   width: 6vw;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   stroke: rgba(65, 65, 65, 0.3);
 }
-#projects #showcase {
+
+#showcase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -968,25 +979,25 @@ html {
   width: 100%;
   padding: 0 5vw;
 }
-#projects #showcase .cnt {
+#showcase .cnt {
   border-radius: 50px;
   width: 55%;
   overflow: hidden;
 }
-#projects #showcase .cnt img {
+#showcase .cnt img {
   -webkit-transition: -webkit-filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
   transition: -webkit-filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
   transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
   transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s, -webkit-filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
   width: 100%;
 }
-#projects #showcase .cnt1 {
+#showcase .cnt1 {
   width: 55%;
 }
-#projects #showcase .cnt2 {
+#showcase .cnt2 {
   width: 28%;
 }
-#projects #showcase .cnt3 {
+#showcase .cnt3 {
   width: 55%;
   -webkit-transform: translate(35%);
           transform: translate(35%);
