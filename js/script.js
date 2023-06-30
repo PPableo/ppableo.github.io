@@ -139,8 +139,9 @@ function locoInt() {
 }
 
 function cardHoverEffect() {
+  var showingImage = null; // Initialize showingImage variable
+
   document.querySelectorAll(".cnt").forEach(function(cnt) {
-    var showingImage;
     cnt.addEventListener("mousemove", function(dets){
       document.querySelector("#cursor").children[dets.target.dataset.index].style.opacity = 1;
       showingImage = dets.target;
@@ -148,14 +149,20 @@ function cardHoverEffect() {
       showingImage.style.filter = "grayscale(1)";
 
       document.querySelector("#projects").style.backgroundColor = "#" + dets.target.dataset.color;
-    })
+    });
+
     cnt.addEventListener("mouseleave", function(dets){
-      document.querySelector("#cursor").children[showingImage.dataset.index].style.opacity = 0;
-      showingImage.style.filter = "grayscale(0)";
-      document.querySelector("#projects").style.backgroundColor = "#f2f2f2"
-    })
+      if (showingImage) {
+        document.querySelector("#cursor").children[showingImage.dataset.index].style.opacity = 0;
+        showingImage.style.filter = "grayscale(0)";
+        document.querySelector("#projects").style.backgroundColor = "#f2f2f2";
+        showingImage = null; // Reset showingImage variable
+      }
+    });
   });
 }
+
+
 
 // revealToSpan();
 // valueSetters();
