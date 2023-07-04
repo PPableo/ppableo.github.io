@@ -251,3 +251,144 @@ hr {
 
     }
 }
+
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 15vh;
+
+    .u-width-1 {
+        width: 55%;
+    }
+
+    .u-width-2 {
+        width: 32%;
+        transform: translate(-20%, 0);
+
+        a {
+            padding-top: 2% !important;
+        }
+    }
+
+    .u-width-3 {
+        width: 55%;
+        transform: translate(35%, 0);
+
+        a {
+            padding-top: 28% !important;
+        }
+    }
+
+    .u-width-4 {
+        width: 34%;
+        transform: translate(0, 42%);
+
+        a {
+            padding-top: 15% !important;
+        }
+    }
+
+    .u-width-5 {
+        width: 50%;
+
+        a {
+            padding-top: 30% !important;
+        }
+    }
+}
+
+.project-items {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    margin: 1vh 2vw;
+
+    &:hover .project-info>p {
+        opacity: 1;
+        transform: translate(0)
+    }
+
+    &:hover .project-info>p:nth-child(2) {
+        transition-delay: .3s !important
+    }
+
+    &:hover {
+        img {
+            filter: saturate(0);
+        }
+    }
+
+    a {
+        padding-top: 52%;
+        display: block;
+        text-decoration: none;
+
+        img {
+            position: absolute;
+            width: 102%;
+            transform: scale(1.15);
+            left: -2%;
+            top: 0;
+            will-change: transform
+        }
+    }
+}
+
+.project-info {
+    width: auto;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    padding: 0 0 20px 20px;
+
+    >p {
+        display: block;
+        padding: 12px 30px;
+        font-size: 10px;
+        background: #fff;
+        color: #282828;
+        margin: 10px 0;
+        opacity: 0;
+        transform: translateY(-50%);
+        transition: .4s;
+    }
+
+    p {
+        width: max-content;
+        border-radius: 200px;
+
+        &:first-child {
+            transition-delay: .1s
+        }
+
+        &:nth-child(2) {
+            transition-delay: .2s
+        }
+    }
+
+    .project-title {
+        display: flex;
+
+        p {
+            font-size: 22px;
+            text-transform: none;
+            background: #fff;
+            padding: 14px 38px;
+            margin-right: 12px;
+            color: #282828
+        }
+
+        .project-button  {
+            background-color: #fff;
+            border-radius: 100px;
+            padding: 18px;
+            display: flex;
+            height: max-content;
+
+            svg {
+                width: 18px
+            }
+        }
+    }
+}
