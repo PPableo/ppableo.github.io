@@ -122,13 +122,51 @@ function animateHomepage() {
   });
 
   tl.to("#home .row img", {
-    delay: -.5,
+    delay: -0.5,
     opacity: 1,
     ease: Expo.easeInOut,
   });
 }
 
-revealToSpan();
-valueSetters();
-loaderAnimation();
+function locoInt() {
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    // lerp: 0.6,
+    mobile: true,
+  });
+  
+}
+
+function cardHoverEffect() {
+  var showingImage = null; // Initialize showingImage variable
+
+  document.querySelectorAll(".cnt").forEach(function(cnt) {
+    cnt.addEventListener("mousemove", function(dets){
+      document.querySelector("#cursor").children[dets.target.dataset.index].style.opacity = 1;
+      showingImage = dets.target;
+      document.querySelector("#cursor").children[dets.target.dataset.index].style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
+      showingImage.style.filter = "grayscale(1)";
+
+      document.querySelector("#projects").style.backgroundColor = "#" + dets.target.dataset.color;
+    });
+
+    cnt.addEventListener("mouseleave", function(dets){
+      if (showingImage) {
+        document.querySelector("#cursor").children[showingImage.dataset.index].style.opacity = 0;
+        showingImage.style.filter = "grayscale(0)";
+        document.querySelector("#projects").style.backgroundColor = "#f2f2f2";
+        showingImage = null; // Reset showingImage variable
+      }
+    });
+  });
+}
+
+
+
+// revealToSpan();
+// valueSetters();
+// loaderAnimation();
+// cardHoverEffect();
+// locoInt();
 // animateSvg();

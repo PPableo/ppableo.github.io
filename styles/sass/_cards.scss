@@ -3,8 +3,9 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 20vw;
-    padding: 0 7vw;
+    margin-top: 15vw;
+    margin-bottom: 20vw;
+    padding: 7vw 7vw;
 
     .img-left {
         width: 30%;
@@ -28,27 +29,31 @@
 
         .img-cards {
             position: absolute;
-            width: 30vw;
-            height: 45vw;
+            width: 27vw;
+            height: 40vw;
             border-radius: 1vw;
             filter: grayscale(1);
-            background-color: red;
+            transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+            transform: translate3d(0px, -2.9846%, 0px) rotate(-2.4872deg);
+
+            &:hover {
+                filter: grayscale(0);
+            }
 
             &:nth-child(1) {
                 transform: translate(-40%, -8%)rotate(-20deg);
-                // background-color: yellow;
-                background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60);
+                background-image: url(https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600);
                 background-size: cover;
                 background-position: center;
             }
-
+            
             &:nth-child(2) {
                 transform: translate(-15%, 0%) rotate(-15deg);
                 background-image: url(https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBvcnRyYWl0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60);
                 background-size: cover;
                 background-position: center;
             }
-
+            
             &:nth-child(3) {
                 transform: translate(20%, 10%) rotate(-5deg);
                 background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1015&q=80);
