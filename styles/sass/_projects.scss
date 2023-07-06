@@ -36,7 +36,7 @@
                 width: 20%;
                 text-align: center;
                 font-size: 1.2vw;
-                
+
                 i {
                     font-size: 2.4vw;
                     // display: block;
@@ -96,7 +96,7 @@ hr {
     // transform: scaleX(1);
     width: 80%;
     background-color: rgba(65, 65, 65, .3);
-    margin: 15vh 0 15vh 14%;
+    margin: 15vh 0 0vh 12%;
 
 }
 
@@ -107,9 +107,10 @@ hr {
 
     h1 {
         color: #333;
-        padding: 0 10vw;
+        padding: 0 10vh;
         font-size: 7vw;
         font-weight: 600;
+        margin: 15vh 0vh;
     }
 
     .o-ui-arrow {
@@ -281,7 +282,7 @@ hr {
     }
 
     .u-width-4 {
-        width: 34%;
+        width: 26%;
         transform: translate(0, 42%);
 
         a {
@@ -302,7 +303,7 @@ hr {
     position: relative;
     overflow: hidden;
     border-radius: 40px;
-    margin: 1vh 2vw;
+    margin: 1vh 6vw;
 
     &:hover .project-info>p {
         opacity: 1;
@@ -379,7 +380,7 @@ hr {
             color: #282828
         }
 
-        .project-button  {
+        .project-button {
             background-color: #fff;
             border-radius: 100px;
             padding: 18px;
@@ -390,5 +391,75 @@ hr {
                 width: 18px
             }
         }
+    }
+}
+
+// #about {
+//     transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
+//     padding-top: 100px;
+//     // couldn't see h1 cause image was covering it
+//     position: relative;
+//     width: 100%;
+//     min-height: 70vh;
+//     background-color: #f2f2f2;
+
+//     .about-title {
+//         h1 {
+//             display: block;
+//             font-size: 2vw;
+//             color: #a2a2a2;
+//             // text-transform: uppercase;
+//             margin-bottom: 25px;
+//         }
+//     }
+// }
+
+#about {
+    transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    padding-top: 100px;
+    display: flex;
+    // couldn't see h1 cause image was covering it
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+
+    .about-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        // font-size: 2.4vw;
+        // letter-spacing: 1px;
+        // font-weight: 500;
+        // color: #333;
+
+        h1 {
+            display: flex;
+            font-size: 2.4vw;
+            letter-spacing: 1px;
+            // font-weight: 500;
+            color: #a2a2a2;
+        }
+
+        p {
+            font-size: 1.2vw;
+        }
+
+        .o-ui-arrow {
+            // color: #333;
+            // width: auto;
+            width: 6vw;
+            transform: rotate(-47deg);
+            stroke: rgba(65, 65, 65, .3);
+        }
+    }
+
+
+    div {
+        padding: 0vw 5vw;
     }
 }
