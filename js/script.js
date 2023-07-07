@@ -167,6 +167,6 @@ function cardHoverEffect() {
 // revealToSpan();
 // valueSetters();
 // loaderAnimation();
-// cardHoverEffect();
 // locoInt();
+// cardHoverEffect();
 // animateSvg();

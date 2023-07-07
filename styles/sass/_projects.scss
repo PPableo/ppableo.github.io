@@ -18,11 +18,11 @@
         background-image: url('../../assets/rip.f6d7c4dd.svg');
         background-size: cover;
     }
-
+    
     .skills {
         padding: 0 5vw;
         margin: 20vw 5vw;
-
+        
         .set {
             padding-inline-start: 0;
             // width: auto;
@@ -59,6 +59,7 @@
     padding: 0 5vw;
     justify-content: flex-start;
     align-items: baseline;
+    margin-top: 10vw;
 
     .o-ui-arrow {
         // color: #333;
@@ -283,6 +284,7 @@ hr {
 
     .u-width-4 {
         width: 26%;
+        z-index: 2;
         transform: translate(0, 42%);
 
         a {
@@ -303,7 +305,7 @@ hr {
     position: relative;
     overflow: hidden;
     border-radius: 40px;
-    margin: 1vh 6vw;
+    margin: 0vw 6vw;
 
     &:hover .project-info>p {
         opacity: 1;
@@ -425,7 +427,19 @@ hr {
 
     width: 100%;
     min-height: 100vh;
-    background-color: #f2f2f2;
+    background-color: #fcfaf8;
+
+    &::before {
+        content: " ";
+        display: block;
+        top: 15px;
+        position: absolute;
+        width: 100%;
+        height: 160px;
+        transform: rotate(0deg);
+        background-image: url('../../assets/rip.f6d7c4dd.svg');
+        background-size: cover;
+    }
 
     .about-title {
         display: flex;
