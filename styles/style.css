@@ -1337,17 +1337,17 @@ hr {
   display: flex;
 }
 .project-info .project-title p {
-  font-size: 22px;
+  font-size: 3vw;
   text-transform: none;
   background: #fff;
-  padding: 14px 38px;
+  padding: 10px 25px;
   margin-right: 12px;
   color: #282828;
 }
 .project-info .project-title .project-button {
   background-color: #fff;
   border-radius: 100px;
-  padding: 18px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1356,7 +1356,7 @@ hr {
   height: max-content;
 }
 .project-info .project-title .project-button svg {
-  width: 18px;
+  width: 13px;
 }
 
 #about {

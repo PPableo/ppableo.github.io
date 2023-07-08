@@ -374,10 +374,10 @@ hr {
         display: flex;
 
         p {
-            font-size: 22px;
+            font-size: 3vw;
             text-transform: none;
             background: #fff;
-            padding: 14px 38px;
+            padding: 10px 25px;
             margin-right: 12px;
             color: #282828
         }
@@ -385,12 +385,12 @@ hr {
         .project-button {
             background-color: #fff;
             border-radius: 100px;
-            padding: 18px;
+            padding: 10px;
             display: flex;
             height: max-content;
 
             svg {
-                width: 18px
+                width: 13px 
             }
         }
     }
