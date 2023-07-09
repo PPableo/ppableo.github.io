@@ -1,0 +1,15 @@
+/* ---------------------------- RESPONSIVE DESIGN --------------------------- */
+
+@media screen and (max-width: 1100px) {
+    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+
+}
+
+@media screen and (max-width: 980px),
+screen and (max-height: 850px) {
+    /* all of our styles for MOBILE devices will go within this breakpoint */
+}
+
+@media screen and (max-width: 500px),
+screen and (max-height: 490px) {
+}
