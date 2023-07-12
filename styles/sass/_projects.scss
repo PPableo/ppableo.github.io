@@ -4,7 +4,7 @@
     // couldn't see h1 cause image was covering it
     position: relative;
     width: 100%;
-    min-height: 330vw;
+    min-height: 270vw;
     background-color: #f2f2f2;
 
     &::before {
@@ -18,11 +18,15 @@
         background-image: url('../../assets/rip.f6d7c4dd.svg');
         background-size: cover;
     }
-    
+
+    .projects-wrap {
+        padding-bottom: 13vh;
+    }
+
     .skills {
         padding: 0 5vw;
         margin: 20vw 5vw;
-        
+
         .set {
             padding-inline-start: 0;
             // width: auto;
@@ -108,7 +112,7 @@ hr {
 
     h1 {
         color: #333;
-        padding: 0 10vh;
+        // padding: 0 10vh;
         font-size: 7vw;
         font-weight: 600;
         margin: 15vh 0vh;
@@ -116,7 +120,7 @@ hr {
 
     .o-ui-arrow {
         // color: #333;
-        width: 6vw;
+        width: auto;
         transform: rotate(90deg);
         stroke: rgba(65, 65, 65, .3);
     }
@@ -262,7 +266,7 @@ hr {
 
     .u-width-1 {
         width: 55%;
-        
+
         a {
             padding-top: 75% !important;
         }
@@ -380,7 +384,7 @@ hr {
             font-size: 2vw;
             text-transform: none;
             background: #fff;
-            padding: 10px 25px;
+            padding: 12px 30px;
             color: #282828
         }
 
@@ -392,7 +396,7 @@ hr {
             height: max-content;
 
             svg {
-                width: 13px 
+                width: 13px
             }
         }
     }
@@ -420,15 +424,18 @@ hr {
 
 #about {
     transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
-    padding-top: 100px;
-    display: flex;
+    // display: flex;
     // couldn't see h1 cause image was covering it
     position: relative;
     align-items: center;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    // justify-content: space-between;
 
     width: 100%;
-    min-height: 50vh;
+    min-height: 80vh;
     background-color: #fcfaf8;
 
     &::before {
@@ -445,37 +452,64 @@ hr {
 
     .about-title {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-transform: uppercase;
+        position: relative;
+        // align-items: center;
+        // justify-content: space-between;
+        // text-transform: uppercase;
         // font-size: 2.4vw;
         // letter-spacing: 1px;
         // font-weight: 500;
         // color: #333;
 
         h1 {
-            display: flex;
-            font-size: 2.4vw;
+            // display: flex;
+            font-size: 5vw;
             letter-spacing: 1px;
-            // font-weight: 500;
-            color: #a2a2a2;
+            font-weight: bold;
+            // color: #a2a2a2;
+            color: #333;
+            margin: 5vh 0vh;
         }
+
+.seperator {
+    border: none;
+height: 1px;
+width: 83%;
+background-color: rgba(65, 65, 65, 0.3);
+margin: 12vh 0 0vh 0%;
+}
 
         p {
-            font-size: 1.2vw;
+            font-size: 2.2vw;
         }
 
-        .o-ui-arrow {
-            // color: #333;
-            // width: auto;
-            width: 6vw;
-            transform: rotate(-47deg);
-            stroke: rgba(65, 65, 65, .3);
+        img {
+            width: 10%;
+            // left: 20%;
+            margin: 2vw;
+
+            // position: absolute;
+            // flip img horizontally 
+            transform: scaleX(-1);
+            /* Optional: Preserve the original aspect ratio */
+            transform-origin: center;
         }
+
+        // .o-ui-arrow {
+        //     // color: #333;
+        //     // width: auto;
+        //     width: 6vw;
+        //     transform: rotate(-47deg);
+        //     stroke: rgba(65, 65, 65, .3);
+        // }
     }
 
 
     div {
+        font-size: 2.4vw;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #333;
         padding: 0vw 5vw;
     }
 }
