@@ -265,7 +265,7 @@ hr {
     margin-top: 15vh;
 
     .u-width-1 {
-        width: 55%;
+        width: 102%;
 
         a {
             padding-top: 75% !important;
@@ -273,8 +273,8 @@ hr {
     }
 
     .u-width-2 {
-        width: 50%;
-        transform: translate(-20%, 0);
+        width: 100%;
+        transform: translate(-7%, 0);
 
         a {
             padding-top: 0% !important;
@@ -282,11 +282,12 @@ hr {
     }
 
     .u-width-3 {
-        width: 55%;
-        transform: translate(35%, 0);
+        width: 70%;
+        min-height: 25vh;
+        transform: translate(17%, 0);
 
         a {
-            padding-top: 17% !important;
+            padding-top: 3% !important;
         }
     }
 
@@ -296,7 +297,7 @@ hr {
         transform: translate(0, 42%);
 
         a {
-            padding-top: 6% !important;
+            padding-top: 3% !important;
         }
     }
 
@@ -304,7 +305,7 @@ hr {
         width: 100%;
 
         a {
-            padding-top: 9% !important;
+            padding-top: 3% !important;
         }
     }
 }
@@ -435,7 +436,7 @@ hr {
     // justify-content: space-between;
 
     width: 100%;
-    min-height: 80vh;
+    min-height: 110vh;
     background-color: #fcfaf8;
 
     &::before {

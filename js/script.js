@@ -87,6 +87,16 @@ function loaderAnimation() {
   });
 }
 
+window.addEventListener('load', () => {
+  if (document.querySelector('#loader') !== null) {
+    window.sessionStorage.setItem('Loader', 'displayed');
+  }
+  
+  if (window.sessionStorage.getItem('Loader')) {
+    document.querySelector('#loader').classList.remove('animated');
+  }
+});
+
 // function animateSvg() {
 //   document.querySelectorAll("#Visual>g").forEach(function (e) {
 //     var character = e.childNodes[1].childNodes[1];
