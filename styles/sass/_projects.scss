@@ -166,7 +166,7 @@ hr {
     width: 17vw;
     top: 0;
     left: 0;
-    z-index: 9000;
+    z-index: 11;
 
     >div {
         opacity: 0;
@@ -472,13 +472,13 @@ hr {
             margin: 5vh 0vh;
         }
 
-.seperator {
-    border: none;
-height: 1px;
-width: 83%;
-background-color: rgba(65, 65, 65, 0.3);
-margin: 12vh 0 0vh 0%;
-}
+        .seperator {
+            border: none;
+            height: 1px;
+            width: 83%;
+            background-color: rgba(65, 65, 65, 0.3);
+            margin: 12vh 0 0vh 0%;
+        }
 
         p {
             font-size: 2.2vw;
