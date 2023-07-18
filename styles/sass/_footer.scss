@@ -1,4 +1,20 @@
-// // footer {
+footer {
+    background: #7d7777;
+    color: #fcfaf8;
+    margin: 0;
+    text-align: center;
+    font-size: 2vw;
+
+    p {
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 0;
+        line-height: 2.8rem;
+        padding-block: 2rem;
+    }
+}
+
+// footer {
 // //     width: 100%;
 // //     margin-top: 5vh;
 // //     background-color: #253b39;

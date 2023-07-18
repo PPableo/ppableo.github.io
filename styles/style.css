@@ -1468,14 +1468,18 @@ hr {
   text-align: center;
 }
 #contact .wrapper .form-container input {
-  border: 1px solid rgba(65, 65, 65, 0.3);
+  border: 1px solid #fcfaf8;
+  -webkit-box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.26);
+          box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.26);
   width: 100%;
   padding: 1vw;
   margin: 1vw;
   border-radius: 10px;
 }
 #contact .wrapper .form-container textarea {
-  border: 1px solid rgba(65, 65, 65, 0.3);
+  border: 1px solid #fcfaf8;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
   width: 100%;
   margin: 1vw;
@@ -1484,8 +1488,10 @@ hr {
 #contact .wrapper .form-container button {
   font-size: 2vw;
   padding: 5px 10px;
-  color: rgba(65, 65, 65, 0.3);
-  border: none;
+  color: #333;
+  border: 1px solid #fcfaf8;
+  -webkit-box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.26);
+          box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.26);
   border-radius: 4px;
 }
 #contact .wrapper .form-container button:hover {
@@ -1515,4 +1521,19 @@ hr {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #14cf93;
+}
+
+footer {
+  background: #7d7777;
+  color: #fcfaf8;
+  margin: 0;
+  text-align: center;
+  font-size: 2vw;
+}
+footer p {
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 2.8rem;
+  padding-block: 2rem;
 }
