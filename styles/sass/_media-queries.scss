@@ -1,65 +1,58 @@
 /* ---------------------------- RESPONSIVE DESIGN --------------------------- */
 
 @media screen and (max-width: 1100px) {
-    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
-
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }
 
-@media screen and (max-width: 395px),
-screen and (max-height: 855px) {
-    #home {
-
-        .row {
-            .text {
-                h5 {
-                    font-size: 2vw;
-                }
-            }
+@media screen and (max-width: 395px), screen and (max-height: 855px) {
+  #home {
+    .row {
+      .text {
+        h5 {
+          font-size: 2vw;
         }
-
-        #imagery {
-            margin-top: 0;
-
-            .img-left h1 {
-                font-size: 3.4vw;
-            }
-
-        }
+      }
     }
 
-    #projects {
-        .services {
-            .serviceDetails {
-                font-size: 4vw;
-            }
+    #imagery {
+      margin-top: 0;
 
-            div {
+      .img-left h1 {
+        font-size: 3.4vw;
+      }
+    }
+  }
 
-                h1 {
-                    font-size: 4vw;
-                }
-            }
+  #projects {
+    .services {
+      .serviceDetails {
+        font-size: 4vw;
+      }
+
+      div {
+        h1 {
+          font-size: 4vw;
         }
-
-        .skills {
-
-            .set {
-
-                li {
-                    i {
-                        font-size: 2rem;
-                    }
-    
-                    p {
-                        font-size: .8rem;
-                    }
-                }
-            }
-        }
+      }
     }
 
-    /* all of our styles for MOBILE devices will go within this breakpoint */
+    .skills {
+      .set {
+        li {
+          i {
+            font-size: 2rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  /* all of our styles for MOBILE devices will go within this breakpoint */
 }
 
-@media screen and (max-width: 500px),
-screen and (max-height: 490px) {}
+@media screen and (max-width: 500px), screen and (max-height: 490px) {
+}

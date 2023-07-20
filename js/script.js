@@ -87,15 +87,15 @@ function loaderAnimation() {
   });
 }
 
-window.addEventListener('load', () => {
-  if (document.querySelector('#loader') !== null) {
-    window.sessionStorage.setItem('Loader', 'displayed');
-  }
-  
-  if (window.sessionStorage.getItem('Loader')) {
-    document.querySelector('#loader').classList.remove('animated');
-  }
-});
+// window.addEventListener("load", () => {
+//   if (document.querySelector("#loader") !== null) {
+//     window.sessionStorage.setItem("Loader", "displayed");
+//   }
+
+//   if (window.sessionStorage.getItem("Loader")) {
+//     document.querySelector("#loader").classList.remove("animated");
+//   }
+// });
 
 // function animateSvg() {
 //   document.querySelectorAll("#Visual>g").forEach(function (e) {
@@ -141,29 +141,46 @@ function animateHomepage() {
 function locoInt() {
   const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
+    smooth: true
     // lerp: 0.6,
-    mobile: true,
+    // mobile: true,
   });
-  
-}
+    // Adding event listeners to each navigation item with the class "js-scroll-link"
+    const scrollLinks = document.querySelectorAll('.js-scroll-link');
+    scrollLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevents the default behavior of the link (e.g., navigating to a new page)
+        const target = this.getAttribute('href'); // Get the value of the "href" attribute
+        scroll.scrollTo(document.querySelector(target)); // Scroll to the target element
+      });
+    });
+  }
+
+
 
 function cardHoverEffect() {
   var showingImage = null; // Initialize showingImage variable
 
-  document.querySelectorAll(".cnt").forEach(function(cnt) {
-    cnt.addEventListener("mousemove", function(dets){
-      document.querySelector("#cursor").children[dets.target.dataset.index].style.opacity = 1;
+  document.querySelectorAll(".cnt").forEach(function (cnt) {
+    cnt.addEventListener("mousemove", function (dets) {
+      document.querySelector("#cursor").children[
+        dets.target.dataset.index
+      ].style.opacity = 1;
       showingImage = dets.target;
-      document.querySelector("#cursor").children[dets.target.dataset.index].style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
+      document.querySelector("#cursor").children[
+        dets.target.dataset.index
+      ].style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
       showingImage.style.filter = "grayscale(1)";
 
-      document.querySelector("#projects").style.backgroundColor = "#" + dets.target.dataset.color;
+      document.querySelector("#projects").style.backgroundColor =
+        "#" + dets.target.dataset.color;
     });
 
-    cnt.addEventListener("mouseleave", function(dets){
+    cnt.addEventListener("mouseleave", function (dets) {
       if (showingImage) {
-        document.querySelector("#cursor").children[showingImage.dataset.index].style.opacity = 0;
+        document.querySelector("#cursor").children[
+          showingImage.dataset.index
+        ].style.opacity = 0;
         showingImage.style.filter = "grayscale(0)";
         document.querySelector("#projects").style.backgroundColor = "#f2f2f2";
         showingImage = null; // Reset showingImage variable
@@ -171,8 +188,6 @@ function cardHoverEffect() {
     });
   });
 }
-
-
 
 revealToSpan();
 valueSetters();
