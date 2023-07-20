@@ -10,7 +10,7 @@
 }
 
 #loader {
-    display: none;
+    // display: none;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -56,7 +56,7 @@
 }
 
 #green {
-    display: none;
+    // display: none;
     // when using position: absolute it's removed from the general flow or stacking of the page
     position: absolute;
     top: 100%;
