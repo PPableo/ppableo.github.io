@@ -230,6 +230,27 @@ html {
 /* ---------------------------- RESPONSIVE DESIGN --------------------------- */
 @media screen and (max-width: 1100px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+  #home .row .text h5 {
+    font-size: 2vw;
+  }
+  #home #imagery {
+    margin-top: 0;
+  }
+  #home #imagery .img-left h1 {
+    font-size: 3.4vw;
+  }
+  #projects .services .serviceDetails {
+    font-size: 4vw;
+  }
+  #projects .services div h1 {
+    font-size: 4vw;
+  }
+  #projects .skills .set li i {
+    font-size: 2rem;
+  }
+  #projects .skills .set li p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 395px), screen and (max-height: 855px) {
   #home .row .text h5 {

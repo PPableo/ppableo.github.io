@@ -87,15 +87,15 @@ function loaderAnimation() {
   });
 }
 
-// window.addEventListener("load", () => {
-//   if (document.querySelector("#loader") !== null) {
-//     window.sessionStorage.setItem("Loader", "displayed");
-//   }
+window.addEventListener("load", () => {
+  if (document.querySelector("#loader") !== null) {
+    window.sessionStorage.setItem("Loader", "displayed");
+  }
 
-//   if (window.sessionStorage.getItem("Loader")) {
-//     document.querySelector("#loader").classList.remove("animated");
-//   }
-// });
+  if (window.sessionStorage.getItem("Loader")) {
+    document.querySelector("#loader").classList.remove("animated");
+  }
+});
 
 // function animateSvg() {
 //   document.querySelectorAll("#Visual>g").forEach(function (e) {
@@ -193,5 +193,5 @@ revealToSpan();
 valueSetters();
 loaderAnimation();
 locoInt();
-// cardHoverEffect();
+cardHoverEffect();
 // animateSvg();
