@@ -1,87 +1,85 @@
 #main {
-    // position: relative;
-    // when using position: relative it is able to move relative to it's original position, or stacked box area
-    width: 100%;
-    // takes up 100% of it's block. remember that there are different types of display. display block will take up left to right of where it's being stacked
-    // height: 100%;
-    // unlike width, height: 100% does not represent the browser's height, it is based on an element's parent's height, and if the parent element has no set height, the element will not grow.
-    // If we would like our elements to take up 100% of the browser's height, using the viewport height unit to set height: 100vh is a better choice.
-    // background-color: red;
+  // position: relative;
+  // when using position: relative it is able to move relative to it's original position, or stacked box area
+  width: 100%;
+  // takes up 100% of it's block. remember that there are different types of display. display block will take up left to right of where it's being stacked
+  // height: 100%;
+  // unlike width, height: 100% does not represent the browser's height, it is based on an element's parent's height, and if the parent element has no set height, the element will not grow.
+  // If we would like our elements to take up 100% of the browser's height, using the viewport height unit to set height: 100vh is a better choice.
+  // background-color: red;
 }
 
 #loader {
-    display: none;
-    position: fixed;
+  // display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background-color: #111;
+  color: #fff;
+
+  h1 {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 100vh;
-    z-index: 10;
-    background-color: #111;
-    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    font-weight: 500;
+  }
 
-    h1 {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5vw;
-        font-weight: 500;
+  #topheading {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
 
+    h5 {
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      font-weight: 300;
     }
-
-    
-    #topheading {
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        
-        h5 {
-            margin: 0;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 1.1rem;
-            font-weight: 300;
-        }
-    }
+  }
 }
 
 .spice {
-    font-family: 'Mazius';
-    font-weight: 100;
-    font-style: italic;
-    color: #14cf93;
+  font-family: "Mazius";
+  font-weight: 100;
+  font-style: italic;
+  color: #14cf93;
 }
 
 #green {
-    display: none;
-    // when using position: absolute it's removed from the general flow or stacking of the page
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 0vh;
-    z-index: 9;
-    background-color: #14cf93;
+  // display: none;
+  // when using position: absolute it's removed from the general flow or stacking of the page
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 0vh;
+  z-index: 9;
+  background-color: #14cf93;
 }
 
 .reveal .parent {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow-y: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
 }
 
 .reveal .parent .child {
-    display: block;
-    // transform: translate(-70%);
+  display: block;
+  // transform: translate(-70%);
 }
 
 .parent .child span {
-    display: inline-block;
-    // padding: 0.5rem;
-    // word-spacing: 2rem;
+  display: inline-block;
+  // padding: 0.5rem;
+  // word-spacing: 2rem;
 }
 
 // #elem {
