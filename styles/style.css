@@ -230,29 +230,8 @@ html {
 /* ---------------------------- RESPONSIVE DESIGN --------------------------- */
 @media screen and (max-width: 1100px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
-  #home .row .text h5 {
-    font-size: 2vw;
-  }
-  #home #imagery {
-    margin-top: 0;
-  }
-  #home #imagery .img-left h1 {
-    font-size: 3.4vw;
-  }
-  #projects .services .serviceDetails {
-    font-size: 4vw;
-  }
-  #projects .services div h1 {
-    font-size: 4vw;
-  }
-  #projects .skills .set li i {
-    font-size: 2rem;
-  }
-  #projects .skills .set li p {
-    font-size: 0.8rem;
-  }
 }
-@media screen and (max-width: 395px), screen and (max-height: 855px) {
+@media screen and (max-width: 425px) {
   #home .row .text h5 {
     font-size: 2vw;
   }
@@ -262,17 +241,48 @@ html {
   #home #imagery .img-left h1 {
     font-size: 3.4vw;
   }
+  #projects {
+    padding-top: 0px;
+  }
   #projects .services .serviceDetails {
     font-size: 4vw;
   }
   #projects .services div h1 {
     font-size: 4vw;
   }
-  #projects .skills .set li i {
-    font-size: 2rem;
+  #projects .skills .set li .fa-brands,
+  #projects .skills .set li .fa-solid {
+    font-size: 5vw;
   }
   #projects .skills .set li p {
-    font-size: 0.8rem;
+    font-size: 6vw;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #333;
+  }
+  #projects .projects-wrap .project-row {
+    margin-top: 5vh;
+  }
+  #about {
+    height: 80vh;
+  }
+  #contact .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .wrapper div.contact-info {
+    font-size: 3vw;
+  }
+  #contact .wrapper .social-icons {
+    font-size: 3vw;
+  }
+  #contact .wrapper .social-icons .fab {
+    font-size: 5vw;
   }
   /* all of our styles for MOBILE devices will go within this breakpoint */
 }
@@ -654,7 +664,6 @@ header {
   z-index: 9000;
 }
 header #nav {
-  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -959,6 +968,8 @@ header #nav a #line2 {
   color: #a2a2a2;
 }
 #projects .skills .set li p {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
   font-size: 1.5vw;
   color: #a2a2a2;
 }
@@ -1343,7 +1354,7 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  min-height: 110vh;
+  height: 110vh;
   background-color: #fcfaf8;
 }
 #about::before {
@@ -1492,12 +1503,21 @@ footer {
   padding: 0 5vw;
   width: 100%;
   height: 50px;
+  gap: 10px;
 }
 footer p {
   color: #fcfaf8;
   text-align: center;
   letter-spacing: 1px;
   margin: 0;
-  font-size: 0.8vw;
+  font-size: 1.5vw;
   line-height: 2.8rem;
+}
+footer a:hover {
+  color: red;
+}
+footer a .up-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 3vw;
 }

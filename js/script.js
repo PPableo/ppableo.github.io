@@ -1,23 +1,3 @@
-// tl.to("#loader", {
-//   height: 0,
-//   duration: 2,
-//   ease: Expo.easeInOut,
-// })
-
-//   .to("#main", {
-//     height: "100%",
-//     duration: 2,
-//     delay: -2,
-//     ease: Expo.easeInOut,
-//   })
-
-//   .to("#white", {
-//     height: "100%",
-//     duration: 2,
-//     delay: -1.6,
-//     ease: Expo.easeInOut,
-//   });
-
 function revealToSpan() {
   document.querySelectorAll(".reveal").forEach(function (elem) {
     // create two spans
@@ -87,16 +67,6 @@ function loaderAnimation() {
   });
 }
 
-window.addEventListener("load", () => {
-  if (document.querySelector("#loader") !== null) {
-    window.sessionStorage.setItem("Loader", "displayed");
-  }
-
-  if (window.sessionStorage.getItem("Loader")) {
-    document.querySelector("#loader").classList.remove("animated");
-  }
-});
-
 // function animateSvg() {
 //   document.querySelectorAll("#Visual>g").forEach(function (e) {
 //     var character = e.childNodes[1].childNodes[1];
@@ -156,42 +126,40 @@ function locoInt() {
     });
   }
 
+// function cardHoverEffect() {
+//   var showingImage = null; // Initialize showingImage variable
 
+//   document.querySelectorAll(".cnt").forEach(function (cnt) {
+//     cnt.addEventListener("mousemove", function (dets) {
+//       document.querySelector("#cursor").children[
+//         dets.target.dataset.index
+//       ].style.opacity = 1;
+//       showingImage = dets.target;
+//       document.querySelector("#cursor").children[
+//         dets.target.dataset.index
+//       ].style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
+//       showingImage.style.filter = "grayscale(1)";
 
-function cardHoverEffect() {
-  var showingImage = null; // Initialize showingImage variable
+//       document.querySelector("#projects").style.backgroundColor =
+//         "#" + dets.target.dataset.color;
+//     });
 
-  document.querySelectorAll(".cnt").forEach(function (cnt) {
-    cnt.addEventListener("mousemove", function (dets) {
-      document.querySelector("#cursor").children[
-        dets.target.dataset.index
-      ].style.opacity = 1;
-      showingImage = dets.target;
-      document.querySelector("#cursor").children[
-        dets.target.dataset.index
-      ].style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
-      showingImage.style.filter = "grayscale(1)";
-
-      document.querySelector("#projects").style.backgroundColor =
-        "#" + dets.target.dataset.color;
-    });
-
-    cnt.addEventListener("mouseleave", function (dets) {
-      if (showingImage) {
-        document.querySelector("#cursor").children[
-          showingImage.dataset.index
-        ].style.opacity = 0;
-        showingImage.style.filter = "grayscale(0)";
-        document.querySelector("#projects").style.backgroundColor = "#f2f2f2";
-        showingImage = null; // Reset showingImage variable
-      }
-    });
-  });
-}
+//     cnt.addEventListener("mouseleave", function (dets) {
+//       if (showingImage) {
+//         document.querySelector("#cursor").children[
+//           showingImage.dataset.index
+//         ].style.opacity = 0;
+//         showingImage.style.filter = "grayscale(0)";
+//         document.querySelector("#projects").style.backgroundColor = "#f2f2f2";
+//         showingImage = null; // Reset showingImage variable
+//       }
+//     });
+//   });
+// }
 
 revealToSpan();
 valueSetters();
 loaderAnimation();
 locoInt();
-cardHoverEffect();
+// cardHoverEffect();
 // animateSvg();
