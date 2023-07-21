@@ -43,11 +43,12 @@
 
         i {
           font-size: 2.4vw;
-          // display: block;
           color: #a2a2a2;
         }
 
         p {
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
           font-size: 1.5vw;
           color: #a2a2a2;
         }
@@ -429,7 +430,7 @@ hr {
   // justify-content: space-between;
 
   width: 100%;
-  min-height: 110vh;
+  height: 110vh;
   background-color: #fcfaf8;
 
   &::before {
