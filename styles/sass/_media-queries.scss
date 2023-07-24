@@ -3,6 +3,87 @@
 @media screen and (max-width: 1100px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }
+// @media only screen and (min-resolution: 192dpi) and (min-device-pixel-ratio: 2) {
+//   #home {
+//     .row {
+//       .text {
+//         h5 {
+//           font-size: 2vw;
+//         }
+//       }
+//     }
+
+//     #imagery {
+//       margin-top: 0;
+
+//       .img-left h1 {
+//         font-size: 3.4vw;
+//       }
+//     }
+//   }
+
+//   #projects {
+//     padding-top: 0px;
+
+//     .services {
+//       .serviceDetails {
+//         font-size: 4vw;
+//       }
+
+//       div {
+//         h1 {
+//           font-size: 4vw;
+//         }
+//       }
+//     }
+
+//     .skills {
+//       .set {
+//         li {
+//           .fa-brands,
+//           .fa-solid {
+//             font-size: 5vw;
+//           }
+
+//           p {
+//             font-size: 6vw;
+//             letter-spacing: 1.5px;
+//             text-transform: uppercase;
+//             color: #333;
+//           }
+//         }
+//       }
+//     }
+
+//     .projects-wrap {
+//       .project-row {
+//         margin-top: 5vh;
+//       }
+//     }
+//   }
+
+//   #about {
+//     height: 80vh;
+//   }
+
+//   #contact {
+//     .wrapper {
+//       display: flex;
+//       flex-direction: column;
+//       div.contact-info {
+//         font-size: 3vw;
+//       }
+//       .social-icons {
+//         font-size: 3vw;
+//         .fab {
+//           font-size: 5vw;
+//         }
+//       }
+//     }
+//   }
+
+//   /* Your CSS styles for phones with higher pixel density here */
+// }
 
 @media screen and (max-width: 425px) {
   #home {
@@ -58,7 +139,7 @@
 
     .projects-wrap {
       .project-row {
-        margin-top: 5vh;
+        margin-top: 10%;
       }
     }
   }

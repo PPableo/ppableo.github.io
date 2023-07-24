@@ -20,7 +20,7 @@
   }
 
   .projects-wrap {
-    padding-bottom: 13vh;
+    padding-bottom: 10%;
   }
 
   .skills {
@@ -277,7 +277,7 @@ hr {
 
   .u-width-3 {
     width: 70%;
-    min-height: 25vh;
+    // min-height: 25vh;
     transform: translate(17%, 0);
 
     a {
@@ -335,7 +335,6 @@ hr {
       transform: scale(1.15);
       left: -2%;
       top: 0;
-      will-change: transform;
     }
   }
 }
@@ -377,7 +376,8 @@ hr {
 
     p {
       font-size: 2vw;
-      text-transform: none;
+      text-transform: uppercase;
+      letter-spacing: 1.6px; 
       background: #fff;
       padding: 12px 30px;
       color: #282828;
