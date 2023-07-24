@@ -1353,8 +1353,9 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10%;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   background-color: #fcfaf8;
 }
 #about::before {
