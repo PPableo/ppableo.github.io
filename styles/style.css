@@ -846,7 +846,7 @@ header #nav a #line2 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-top: 15vw;
+  height: 100vh;
   padding: 7vw 7vw;
   margin-bottom: 2vw;
   position: relative;
@@ -920,7 +920,7 @@ header #nav a #line2 {
   padding-top: 100px;
   position: relative;
   width: 100%;
-  min-height: 270vw;
+  height: 100%;
   background-color: #f2f2f2;
 }
 #projects::before {
@@ -1192,60 +1192,35 @@ hr {
 }
 
 .project-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-top: 15vh;
-}
-.project-row .u-width-1 {
-  width: 102%;
-}
-.project-row .u-width-1 a {
-  padding-top: 75% !important;
-}
-.project-row .u-width-2 {
-  width: 100%;
-  -webkit-transform: translate(-7%, 0);
-          transform: translate(-7%, 0);
-}
-.project-row .u-width-2 a {
-  padding-top: 0% !important;
-}
-.project-row .u-width-3 {
-  width: 70%;
-  -webkit-transform: translate(17%, 0);
-          transform: translate(17%, 0);
-}
-.project-row .u-width-3 a {
-  padding-top: 3% !important;
-}
-.project-row .u-width-4 {
-  width: 100%;
-  z-index: 2;
-  -webkit-transform: translate(0, 42%);
-          transform: translate(0, 42%);
-}
-.project-row .u-width-4 a {
-  padding-top: 3% !important;
-}
-.project-row .u-width-5 {
-  width: 100%;
-}
-.project-row .u-width-5 a {
-  padding-top: 3% !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 1.5rem;
 }
 
 .project-items {
   position: relative;
-  overflow: hidden;
   border-radius: 40px;
-  margin: 0vw 6vw;
+  margin: 2rem;
+}
+.project-items:nth-child(7n+1) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.project-items:nth-child(7n+2) {
+  grid-column: span 1;
+  grid-row: span;
+}
+.project-items:nth-child(7n+3) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.project-items:nth-child(7n+4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.project-items:nth-child(7n+5) {
+  grid-column: span 2;
+  grid-row: span 1;
 }
 .project-items:hover .project-info > p {
   opacity: 1;
@@ -1261,21 +1236,16 @@ hr {
           filter: saturate(0);
 }
 .project-items a {
-  display: block;
   text-decoration: none;
 }
 .project-items a img {
-  position: absolute;
-  width: 102%;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  left: -2%;
-  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .project-info {
   width: auto;
-  position: relative;
+  position: absolute;
   z-index: 2;
   text-decoration: none;
   padding: 0 0 20px 20px;
