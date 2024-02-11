@@ -19,6 +19,12 @@ html {
   /* basic font size = 10px */
 }
 
+.wrapper {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 body {
   background-color: #fcfaf8;
 }
@@ -31,15 +37,20 @@ body {
 
 header {
   position: sticky;
+  position: sticky;
   top: 0;
-  z-index: 9000;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   #nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5vw;
     width: 100%;
-    height: 100px;
+    height: 95px;
 
     a {
       position: relative;

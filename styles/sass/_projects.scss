@@ -322,7 +322,7 @@ hr {
 }
 &:nth-child(7n+2) {
     grid-column: span 1;
-    grid-row: span ;
+    grid-row: span 2;
 }
 
 &:nth-child(7n+3) {
@@ -359,13 +359,9 @@ hr {
     text-decoration: none;
 
     img {
-        height: 100%;
-        width: 100%;
-    //   position: absolute;
-    //   width: 102%;
-    //   transform: scale(1.15);
-    //   left: -2%;
-    //   top: 0;
+      border-radius: 1.6rem;
+      display: block;
+      max-width: 100%;
     }
   }
 }
