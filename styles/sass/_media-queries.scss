@@ -85,8 +85,13 @@
 //   /* Your CSS styles for phones with higher pixel density here */
 // }
 
-@media screen and (max-width: 425px) {
+@media screen and (width <= 767px) {
   #home {
+    header {
+      #nav {
+        height: 70px;
+      }
+    }
     .row {
       .text {
         h5 {
@@ -96,6 +101,7 @@
     }
 
     #imagery {
+      height: 50vh;
       margin-top: 0;
 
       .img-left h1 {
@@ -105,6 +111,7 @@
   }
 
   #projects {
+    height: 50vh;
     padding-top: 0px;
 
     .services {
@@ -139,6 +146,8 @@
 
     .projects-wrap {
       .project-row {
+        display: flex;
+        flex-direction: column;
         margin-top: 10%;
       }
     }
