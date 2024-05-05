@@ -1,6 +1,6 @@
 #projects {
   transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
-  padding-top: 100px;
+  padding-top: 3%;
   // couldn't see h1 cause image was covering it
   position: relative;
   width: 100%;
@@ -111,13 +111,13 @@ hr {
     // padding: 0 10vh;
     font-size: 7vw;
     font-weight: 600;
-    margin: 15vh 0vh;
+    // margin: 15vh 0vh;
   }
 
   .o-ui-arrow {
     // color: #333;
     width: auto;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
     stroke: rgba(65, 65, 65, 0.3);
   }
 }
@@ -126,7 +126,7 @@ hr {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-top: 6vw;
+  // margin-top: 6vw;
   position: relative;
   width: 100%;
   padding: 0 5vw;
