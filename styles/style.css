@@ -867,14 +867,18 @@ header #nav a #line2 {
   display: inline-block;
 }
 
+#imagery {
+  width: 100%;
+  text-align: center;
+}
 #imagery .img-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 50vh;
+  min-height: 50vh;
   margin-top: 12%;
-  width: 100%;
+  width: 100% !important;
 }
 #imagery .img-right .img-cards {
   display: -webkit-box;
@@ -886,9 +890,8 @@ header #nav a #line2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 10%;
-  min-height: 470px;
-  min-width: 300px;
+  min-height: 50vh; /* 50% of the viewport height */
+  min-width: 35vw; /* 20% of the viewport width */
   border-radius: 1vw;
   -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;

@@ -2,7 +2,8 @@
   // display: flex;
   // justify-content: space-between;
   // align-items: center;
-  // width: 100%;
+  width: 100%;
+  text-align: center;
   // height: 100vh;
   // padding: 7vw 7vw;
   // margin: 20% 0 20% 0;
@@ -24,10 +25,10 @@
   .img-right {
     display: flex;
     position: relative;
-    height: 50vh;
+    min-height: 50vh;
     margin-top: 12%;
     // align-items: center;
-    width: 100%;
+    width: 100% !important;
     // justify-content: space-evenly;
 
     .img-cards {
@@ -35,9 +36,9 @@
       align-items: center;
       justify-content: space-between;
       // position: absolute;
-      gap: 10%;
-      min-height: 470px;
-      min-width: 300px;
+      min-height: 50vh; /* 50% of the viewport height */
+min-width: 35vw; /* 20% of the viewport width */
+
       border-radius: 1vw;
       // filter: grayscale(1);
       transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
