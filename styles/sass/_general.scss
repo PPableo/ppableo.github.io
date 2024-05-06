@@ -57,7 +57,7 @@ header {
       text-decoration: none;
       text-transform: uppercase;
       font-weight: 300;
-      font-size: 12px;
+      font-size: clamp(1rem, 3vw, 2rem);
       color: black;
 
       &:hover #line2 {
