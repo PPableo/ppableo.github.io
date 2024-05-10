@@ -95,7 +95,7 @@
     .row {
       .text {
         h5 {
-          font-size: 2vw;
+          font-size: clamp(.8rem, 2vw, 3rem);
         }
       }
     }

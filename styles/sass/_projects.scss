@@ -112,14 +112,14 @@ hr {
   h1 {
     color: #333;
     // padding: 0 10vh;
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(3rem, 4vw, 3.5rem);
     font-weight: 600;
     // margin: 15vh 0vh;
   }
 
   .o-ui-arrow {
     // color: #333;
-    width: auto;
+    width: 20%;
     transform: rotate(180deg);
     stroke: rgba(65, 65, 65, 0.3);
   }
