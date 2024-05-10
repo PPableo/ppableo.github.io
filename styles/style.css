@@ -233,7 +233,7 @@ html {
 }
 @media screen and (width <= 767px) {
   #home header #nav {
-    height: 10%;
+    height: 10vh;
   }
   #home .row .text h5 {
     font-size: 2vw;
@@ -251,7 +251,6 @@ html {
   }
   #projects {
     height: 50vh;
-    padding-top: 0px;
   }
   #projects .services .serviceDetails {
     font-size: 4vw;
@@ -264,7 +263,7 @@ html {
     font-size: 5vw;
   }
   #projects .skills .set li p {
-    font-size: 6vw;
+    font-size: clamp(2rem, 3vw, 3rem);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #333;
@@ -740,14 +739,17 @@ header #nav a #line2 {
 }
 
 .row.one {
-  margin-top: 10rem;
+  margin-top: 8%;
+}
+
+.row.two {
+  margin-bottom: 8%;
 }
 
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -821,7 +823,7 @@ header #nav a #line2 {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 3vw, 2rem);
   font-weight: 300;
 }
 
@@ -1090,7 +1092,7 @@ img {
 #projects {
   -webkit-transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
   transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
-  padding-top: 3%;
+  margin-top: 20%;
   position: relative;
   width: 100%;
   height: 100%;
@@ -1112,8 +1114,14 @@ img {
   padding-bottom: 10%;
 }
 #projects .skills {
-  padding: 0 5vw;
-  margin: 10% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Align items in the center */
 }
 #projects .skills .set {
   -webkit-padding-start: 0;
@@ -1126,14 +1134,16 @@ img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 #projects .skills .set li {
-  width: 20%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%; /* Adjust the width as needed */
   text-align: center;
+  margin: 10px;
   font-size: 1.2vw;
 }
 #projects .skills .set li i {
@@ -1145,35 +1155,34 @@ img {
   text-transform: uppercase;
   font-size: 1.5vw;
   color: #a2a2a2;
+  margin-top: 5px;
 }
 
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 5vw;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  margin-top: 10vw;
+  position: relative;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .services .o-ui-arrow {
   width: auto;
   stroke: rgba(65, 65, 65, 0.3);
 }
-.services div {
-  margin-left: 10vw;
-}
-.services div h1 {
+.services h1 {
   font-size: 2.4vw;
   letter-spacing: 1px;
   font-weight: 500;
   color: #333;
 }
-.services .serviceDetails {
+
+.serviceDetails {
   display: block;
   font-size: 2vw;
   color: #a2a2a2;
@@ -1198,14 +1207,13 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 .workrow h1 {
   color: #333;
-  font-size: 7vw;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 600;
 }
 .workrow .o-ui-arrow {
