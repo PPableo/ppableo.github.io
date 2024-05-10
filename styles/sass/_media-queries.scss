@@ -89,7 +89,7 @@
   #home {
     header {
       #nav {
-        height: 10%;
+        height: 10vh;
       }
     }
     .row {
@@ -118,7 +118,6 @@
 
   #projects {
     height: 50vh;
-    padding-top: 0px;
 
     .services {
       .serviceDetails {
@@ -141,7 +140,7 @@
           }
 
           p {
-            font-size: 6vw;
+            font-size: clamp(2rem, 3vw, 3rem);
             letter-spacing: 1.5px;
             text-transform: uppercase;
             color: #333;

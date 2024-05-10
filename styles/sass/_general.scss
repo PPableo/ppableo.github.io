@@ -91,12 +91,15 @@ header {
 }
 
 .row.one {
-  margin-top: 10rem;
+  margin-top: 8%;
+}
+
+.row.two {
+  margin-bottom: 8%;
 }
 
 .row {
   display: flex;
-  margin-top: 5vw;
   justify-content: space-between;
   align-items: center;
   width: 100%;
