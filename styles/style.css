@@ -236,7 +236,7 @@ html {
     height: 10vh;
   }
   #home .row .text h5 {
-    font-size: 2vw;
+    font-size: clamp(0.8rem, 2vw, 3rem);
   }
   #home #imagery {
     height: 50vh;
@@ -744,16 +744,14 @@ header #nav a #line2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   color: #333;
-  padding: 0 7vw;
-  padding-right: 12vw;
   line-height: 1.2;
 }
 .row:nth-child(3) {
@@ -764,7 +762,7 @@ header #nav a #line2 {
   margin-top: 0vw;
 }
 .row h1 {
-  font-size: clamp(1.5rem, 5vw, 10rem);
+  font-size: clamp(3rem, 8vw, 10rem);
   font-weight: 600;
   margin: 0;
 }
@@ -1207,11 +1205,11 @@ hr {
 }
 .workrow h1 {
   color: #333;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(3rem, 4vw, 3.5rem);
   font-weight: 600;
 }
 .workrow .o-ui-arrow {
-  width: auto;
+  width: 20%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   stroke: rgba(65, 65, 65, 0.3);
