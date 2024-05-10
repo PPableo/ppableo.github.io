@@ -118,14 +118,14 @@ header {
   }
 
   h1 {
-    font-size: 10vw;
+    font-size: clamp(3rem, 8vw, 10rem);
     font-weight: 600;
     margin: 0;
   }
 
   h5 {
     opacity: 0.6;
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1rem, 2vw, 3rem);
     font-weight: 500;
     margin: 0;
   }

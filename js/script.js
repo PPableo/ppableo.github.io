@@ -31,15 +31,14 @@ function loaderAnimation() {
 
   tl.from("#loader .child span", {
     x: 100,
-    delay: 1,
-    stagger: 0.2,
-    duration: 1.4,
+    delay: .9,
+    stagger: 0.1,
+    duration: .6,
     ease: Power3.easeInOut,
   });
 
   tl.to("#loader .parent .child", {
     y: "-110%",
-    duration: 1,
     ease: Circ.easeInOut,
   });
 
@@ -52,13 +51,13 @@ function loaderAnimation() {
   tl.to("#green", {
     height: "100%",
     top: 0,
-    duration: 1,
+    duration: .3,
     ease: Circ.easeInOut,
   }, "-=1"); // Offset this animation by 1 second
 
   tl.to("#green", {
     height: "0%",
-    duration: 1,
+    duration: .2,
     ease: Circ.easeInOut,
   }, "-=0.5"); // Offset this animation by 0.5 seconds
 
@@ -106,8 +105,8 @@ function animateHomepage() {
   tl.to("#home .parent .child", {
     y: 0,
     opacity: 1, // Add opacity: 1
-    stagger: 0.2,
-    duration: 2,
+    stagger: 0.1,
+    duration: 1,
     ease: Expo.easeInOut,
   });
 
