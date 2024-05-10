@@ -89,7 +89,7 @@
   #home {
     header {
       #nav {
-        height: 70px;
+        height: 10%;
       }
     }
     .row {
@@ -103,6 +103,12 @@
     #imagery {
       height: 50vh;
       margin-top: 0;
+
+      .img-cards {
+        width: 100%;
+        // min-height: 200px;
+        height: 50%;
+      }
 
       .img-left h1 {
         font-size: 3.4vw;
@@ -162,7 +168,7 @@
       display: flex;
       flex-direction: column;
       div.contact-info {
-        font-size: 3vw;
+        font-size: clamp(1rem, 3vw, 2rem);
       }
       .social-icons {
         font-size: 3vw;

@@ -20,8 +20,9 @@ function revealToSpan() {
 }
 
 function valueSetters() {
+  // Set initial state of header elements
   gsap.set("#nav a", { y: "-100%", opacity: 0 });
-  gsap.set("#home .parent .child", { y: "100%" });
+  gsap.set("#home .parent .child", { y: "100%", opacity: 0 }); // Add opacity: 0
   gsap.set("#home .row img", { opacity: 0 });
 }
 
@@ -46,15 +47,20 @@ function loaderAnimation() {
     height: 0,
     duration: 1,
     ease: Circ.easeInOut,
-  });
+  }, "-=1"); // Offset this animation by 1 second
 
   tl.to("#green", {
     height: "100%",
     top: 0,
     duration: 1,
-    delay: -0.8,
     ease: Circ.easeInOut,
-  });
+  }, "-=1"); // Offset this animation by 1 second
+
+  tl.to("#green", {
+    height: "0%",
+    duration: 1,
+    ease: Circ.easeInOut,
+  }, "-=0.5"); // Offset this animation by 0.5 seconds
 
   tl.to("#green", {
     height: "0%",
@@ -66,6 +72,8 @@ function loaderAnimation() {
     },
   });
 }
+
+
 
 // function animateSvg() {
 //   document.querySelectorAll("#Visual>g").forEach(function (e) {
@@ -87,6 +95,7 @@ function loaderAnimation() {
 function animateHomepage() {
   var tl = gsap.timeline();
 
+  // Animate header elements to desired opacity
   tl.to("#nav a", {
     y: 0,
     opacity: 1,
@@ -96,6 +105,7 @@ function animateHomepage() {
 
   tl.to("#home .parent .child", {
     y: 0,
+    opacity: 1, // Add opacity: 1
     stagger: 0.2,
     duration: 2,
     ease: Expo.easeInOut,
@@ -107,6 +117,7 @@ function animateHomepage() {
     ease: Expo.easeInOut,
   });
 }
+
 
 function locoInt() {
   const scroll = new LocomotiveScroll({
@@ -156,6 +167,7 @@ function locoInt() {
 //     });
 //   });
 // }
+
 
 revealToSpan();
 valueSetters();

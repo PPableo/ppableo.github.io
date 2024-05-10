@@ -1,7 +1,5 @@
 #main {
-  // position: relative;
   // when using position: relative it is able to move relative to it's original position, or stacked box area
-  width: 100%;
   // takes up 100% of it's block. remember that there are different types of display. display block will take up left to right of where it's being stacked
   // height: 100%;
   // unlike width, height: 100% does not represent the browser's height, it is based on an element's parent's height, and if the parent element has no set height, the element will not grow.
@@ -11,10 +9,9 @@
 
 #loader {
   // display: none;
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 100vh;
-  z-index: 9000;
   background-color: #111;
   color: #fff;
 
@@ -31,7 +28,7 @@
   }
 
   #topheading {
-    position: absolute;
+    position: relative;
     top: 5%;
     left: 50%;
     transform: translate(-50%, 0);
@@ -56,7 +53,7 @@
 #green {
   // display: none;
   // when using position: absolute it's removed from the general flow or stacking of the page
-  position: absolute;
+  position: relative;
   top: 100%;
   width: 100%;
   height: 0vh;
@@ -72,7 +69,6 @@
 }
 
 .reveal .parent .child {
-  display: block;
   // transform: translate(-70%);
 }
 
