@@ -295,7 +295,6 @@ html {
   }
   /* all of our styles for MOBILE devices will go within this breakpoint */
 }
-/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1083,7 +1082,7 @@ img {
 #projects {
   -webkit-transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
   transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
-  margin-top: 20%;
+  margin-top: 25%;
   position: relative;
   width: 100%;
   height: 100%;
@@ -1150,6 +1149,7 @@ img {
 }
 
 .services {
+  min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1271,7 +1271,7 @@ hr {
           justify-content: center;
   padding-top: 15%;
   width: 100%;
-  min-height: 50vh;
+  min-height: 20vh;
   background-color: #fcfaf8;
 }
 #about::before {
@@ -1280,7 +1280,7 @@ hr {
   top: -50px;
   position: absolute;
   width: 100%;
-  height: 160px;
+  height: 100px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   background-image: url("../../assets/rip.f6d7c4dd.svg");
@@ -1409,7 +1409,8 @@ hr {
 /* Banner Styles */
 .banner {
   background-color: #f0f0f0;
-  padding: 50px 0;
+  padding-top: 5%;
+  padding-bottom: 25%;
   min-height: 500px;
 }
 
@@ -1419,33 +1420,38 @@ hr {
 }
 
 .banner-content h1 {
-  font-size: clamp(3rem, 8vw, 10rem);
+  font-size: clamp(3rem, 7vw, 8rem);
   margin-bottom: 20px;
 }
 
 .banner-content p {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .cta-button {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #007bff;
+  padding: 12px 20px;
+  background-color: #14cf93;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: clamp(1rem, 3vw, 3rem);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: black;
 }
 
 /* Content Section Styles */
 .content {
   position: relative;
-  padding: 50px 0;
+  padding: 10% 0;
 }
 
 .content-container {
@@ -1454,6 +1460,18 @@ hr {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 80vh; /* Ensure the container has at least the viewport height */
+}
+
+.main-content {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .text-column {
@@ -1461,10 +1479,12 @@ hr {
       -ms-flex: 1;
           flex: 1;
   padding-right: 20px;
+  font-size: clamp(1rem, 3vw, 4rem);
 }
 
 .text-column h2 {
-  font-size: 24px;
+  text-transform: capitalize;
+  font-size: clamp(1rem, 3vw, 4rem);
 }
 
 .sidebar {
@@ -1473,71 +1493,187 @@ hr {
           flex: 1;
   position: sticky;
   top: 100px; /* Adjust the value to your preference */
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content; /* Allow the sidebar to expand with its content */
+  margin-top: 100px; /* Ensure space between sidebar and text */
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  padding: 3%;
 }
 
 .sidebar p {
-  font-size: 16px;
+  font-size: clamp(0.5rem, 3vw, 2rem);
   background-color: #f0f0f0;
   padding: 20px;
   border-radius: 5px;
 }
 
-/* Gallery Styles */
-.gallery {
-  position: relative;
-  margin-top: -13%; /* Adjust the value to your preference */
-  z-index: 1; /* Ensure the gallery is above other elements */
-  overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
-.gallery-images {
-  position: relative;
+.column {
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease; /* Smooth transition effect */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.gallery-images img {
-  width: 100%; /* Fill the container width */
+.column h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.column button {
+  padding: 10px 20px;
+  background-color: #14cf93;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column button i {
+  margin-left: 5px;
+}
+
+.column h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin-top: 15%; /* Adjust the value to your preference */
+  margin-bottom: 45%; /* Adjust the value to your preference */
+  z-index: 1; /* Ensure the gallery is above other elements */
+}
+
+.slider-images {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%; /* Take up full width of the container */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.slider-images img {
+  width: 100%; /* Take up full width of the container */
   height: auto; /* Maintain aspect ratio */
   -o-object-fit: cover;
      object-fit: cover; /* Ensure images cover the container */
 }
 
-.dot-container {
+.prev, .next {
   position: absolute;
-  top: 10%;
-  z-index: 10;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.dot {
-  height: 20px;
-  width: 20px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+  font-size: clamp(2rem, 3vw, 6rem); /* Adjust the size as needed */
 }
 
-.active {
-  background-color: #717171;
+.prev {
+  left: 0;
 }
 
-/* Ensure images don't exceed the container width */
+.next {
+  right: 0;
+}
+
+.column h2 {
+  padding-top: 7%;
+}
+.column i {
+  margin-left: 5%;
+  font-size: 2vw;
+  padding-right: 5%;
+}
+
+.circle-image {
+  margin-top: 5%;
+  width: 80px; /* Adjust the size as needed */
+  height: 80px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensure the image covers the entire circle */
+}
+
+/* Make the image responsive */
 @media (max-width: 768px) {
-  .gallery-images img {
-    width: calc(70% - 10px);
-    margin-right: 5px;
+  .circle-image {
+    width: 50px; /* Adjust the size as needed for smaller screens */
+    height: 50px; /* Adjust the size as needed for smaller screens */
   }
 }
+li {
+  margin-bottom: 10px; /* Adding spacing between list items */
+}
+
+li::marker {
+  color: #14cf93; /* Changing the color of the list item dot */
+}
+
+.icon-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.icon-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.icon-column i {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
 footer {
   background-color: #a2a2a2;
   display: -webkit-box;
