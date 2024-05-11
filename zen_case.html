@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paul Pableo Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body> 
+    <header>
+        <div class="wrapper">       
+        <nav id="nav">
+          <!-- <a href="#imagery" class="js-scroll-link">
+            Paul Pableo
+            <span id="line1" class="line"></span>
+            <span id="line2" class="line"></span>
+          </a> -->
+          <a href="/index.html" class="js-scroll-link">
+            Home
+            <span id="line1" class="line"></span>
+            <span id="line2" class="line"></span>
+          </a>
+          <a href="./assets/Paul Pableo Resume.pdf" download>
+            Resume
+            <span id="line1" class="line"></span>
+            <span id="line2" class="line"></span>
+          </a>
+          <a href="#contact" class="js-scroll-link">
+            Get a Free Project Quote
+            <span id="line1" class="line"></span>
+            <span id="line2" class="line"></span>
+          </a>
+        </nav>
+        </div>
+      </header>
+    <main id="main">
+        <section class="banner">
+            <div class="wrapper">
+                <div class="banner-content">
+                  <h1>A studio website that brings in new clients</h1>
+                  <p>Discover amazing products and services.</p>
+                  <a href="#cta" class="cta-button">Learn More</a>
+                </div>
+                </section>
+                <section class="gallery">
+                    <div class="wrapper">
+                        <div class="gallery-images">
+                          <img src="./assets/zen/zen_1.png" alt="Image 1">
+                          <img src="./assets/zen/zen_2.png" alt="Image 2">
+                          <img src="./assets/zen/zen_3.png" alt="Image 3">
+                          <img src="./assets/zen/zen_4.png" alt="Image 4">
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content">
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                      </div>
+                    <div class="wrapper">
+                        <div class="content-container">
+                            <div class="text-column">
+                                <h2>About Us</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula eu libero blandit semper. Sed vitae feugiat lectus.</p>
+                            </div>
+                            <div class="sidebar">
+                                <p>Scroll down to see more</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+        </div>
+
+    </main>
+    <footer>
+        <p>Copyright © 2023 Paul Pableo</p>
+        <a href="#topheading" class="js-scroll-link">
+          <img
+            class="up-arrow"
+            src="./assets/down-arrow.040970d7.svg"
+            alt="up up-arrow"
+          />
+        </a>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+      <script
+        src="https://kit.fontawesome.com/5d29a38529.js"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        // Define the function to control the slide index and slide display
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("gallery-images")[0].children;
+  var dots = document.getElementsByClassName("dot");
+  
+  // Ensure slide index stays within the range of available slides
+  if (n > slides.length) {
+    slideIndex = 1;
+  }    
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  
+  // Move slides horizontally based on the current slide index
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.transform = "translateX(" + ((i - slideIndex + 1) * (100 / slides.length)) + "%)";
+  }
+  
+  // Update active class for slide indicators
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  dots[slideIndex - 1].className += " active";
+}
+
+// Initialize slide index and show the initial slides
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Function to set the current slide based on user interaction
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+      </script>
+    </body>
+  </html>
