@@ -169,6 +169,6 @@ function locoInt() {
 revealToSpan();
 valueSetters();
 loaderAnimation();
-locoInt();
+// locoInt();
 // cardHoverEffect();
 // animateSvg();

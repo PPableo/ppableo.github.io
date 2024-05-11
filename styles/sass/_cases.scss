@@ -1,7 +1,8 @@
 /* Banner Styles */
 .banner {
     background-color: #f0f0f0;
-    padding: 50px 0;
+    padding-top: 5%;
+    padding-bottom: 25%;
     min-height: 500px;
   }
   
@@ -11,114 +12,225 @@
   }
   
   .banner-content h1 {
-    font-size: clamp(3rem, 8vw, 10rem);
+    font-size: clamp(3rem, 7vw, 8rem);
     margin-bottom: 20px;
   }
   
   .banner-content p {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
   .cta-button {
     display: inline-block;
-    padding: 12px 24px;
-    background-color: #007bff;
+    padding: 12px 20px;
+    background-color: #14cf93;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: clamp(1rem, 3vw, 3rem);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    
   }
   
   .cta-button:hover {
-    background-color: #0056b3;
+    background-color: black;
   }
   
   /* Content Section Styles */
   .content {
     position: relative;
-    padding: 50px 0;
+    padding: 10% 0;
   }
   
   .content-container {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
+    min-height: 80vh; /* Ensure the container has at least the viewport height */
+}
+
+.main-content {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
   .text-column {
     flex: 1;
     padding-right: 20px;
+    font-size: clamp(1rem, 3vw, 4rem);
   }
   
   .text-column h2 {
-    font-size: 24px;
+    text-transform:capitalize;
+    font-size: clamp(1rem, 3vw, 4rem);
+
   }
   
   .sidebar {
     flex: 1;
     position: sticky;
     top: 100px; /* Adjust the value to your preference */
-  }
-  
-  .sidebar p {
-    font-size: 16px;
+    height: fit-content; /* Allow the sidebar to expand with its content */
+    margin-top: 100px; /* Ensure space between sidebar and text */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    padding: 3%;
+}
+
+.sidebar p {
+    font-size: clamp(.5rem, 3vw, 2rem);
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
-  }
-  
+}
 
-  /* Gallery Styles */
-  .gallery {
+.column {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.column button {
+  padding: 10px 20px;
+  background-color: #14cf93;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.column button i {
+  margin-left: 5px;
+}
+
+
+.column h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+// Slider
+.slider {
     position: relative;
-    margin-top: -13%; /* Adjust the value to your preference */
+    max-width: 100%;
+    // overflow: hidden;
+    margin-top: 15%; /* Adjust the value to your preference */
+    margin-bottom: 45%; /* Adjust the value to your preference */
     z-index: 1; /* Ensure the gallery is above other elements */
-    overflow-x: hidden; /* Prevent horizontal overflow */
-  }
-  
-  .gallery-images {
-    position: relative;
+}
+
+.slider-images {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; /* Take up full width of the container */
     display: flex;
-    transition: transform 1s ease; /* Smooth transition effect */
-  }
-  
-  
-  .gallery-images img {
-    width: 100%; /* Fill the container width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure images cover the container */
-  }
-  
-  
-  
-  .dot-container {
+    transition: transform 0.5s ease;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.slider-images img {
+  width: 100%; /* Take up full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images cover the container */
+}
+
+.prev, .next {
     position: absolute;
-    top: 10%;
-    z-index: 10;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .dot {
-    height: 20px;
-    width: 20px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+    font-size:clamp(2rem, 3vw, 6rem); /* Adjust the size as needed */
+
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.column {
+
+  h2 {
+    padding-top: 7%;
   }
-  
-  .active {
-    background-color: #717171;
+
+  i {
+    margin-left: 5%;
+    font-size: 2vw;
+    padding-right: 5%;
   }
-  
-  /* Ensure images don't exceed the container width */
-  @media (max-width: 768px) {
-    .gallery-images img {
-      width: calc(70% - 10px);
-      margin-right: 5px;
-    }
+}
+
+.circle-image {
+  margin-top: 5%;
+  width: 80px; /* Adjust the size as needed */
+  height: 80px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensure the image covers the entire circle */
+}
+
+/* Make the image responsive */
+@media (max-width: 768px) {
+  .circle-image {
+      width: 50px; /* Adjust the size as needed for smaller screens */
+      height: 50px; /* Adjust the size as needed for smaller screens */
   }
-  
+}
+
+li {
+  margin-bottom: 10px; /* Adding spacing between list items */
+}
+
+li::marker {
+  color: #14cf93; /* Changing the color of the list item dot */
+}
+
+.icon-row {
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-column {
+  flex: 1;
+  padding: 5%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-column i {
+  font-size: 3rem;
+  font-weight: bolder;
+}
