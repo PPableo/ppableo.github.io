@@ -72,8 +72,6 @@ function loaderAnimation() {
   });
 }
 
-
-
 // function animateSvg() {
 //   document.querySelectorAll("#Visual>g").forEach(function (e) {
 //     var character = e.childNodes[1].childNodes[1];

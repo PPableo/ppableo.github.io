@@ -131,8 +131,7 @@ header {
   }
 
   svg {
-    height: 8vw;
-    margin: 0 2.5vw;
+    height: clamp(2rem, 10vw, 10rem);
   }
 
   path,

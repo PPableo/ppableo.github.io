@@ -1,0 +1,124 @@
+/* Banner Styles */
+.banner {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    min-height: 500px;
+  }
+  
+  .banner-content {
+    max-width: 50%;
+    text-align: left;
+  }
+  
+  .banner-content h1 {
+    font-size: clamp(3rem, 8vw, 10rem);
+    margin-bottom: 20px;
+  }
+  
+  .banner-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Content Section Styles */
+  .content {
+    position: relative;
+    padding: 50px 0;
+  }
+  
+  .content-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .text-column {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .text-column h2 {
+    font-size: 24px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    position: sticky;
+    top: 100px; /* Adjust the value to your preference */
+  }
+  
+  .sidebar p {
+    font-size: 16px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+
+  /* Gallery Styles */
+  .gallery {
+    position: relative;
+    margin-top: -13%; /* Adjust the value to your preference */
+    z-index: 1; /* Ensure the gallery is above other elements */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .gallery-images {
+    position: relative;
+    display: flex;
+    transition: transform 1s ease; /* Smooth transition effect */
+  }
+  
+  
+  .gallery-images img {
+    width: 100%; /* Fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the container */
+  }
+  
+  
+  
+  .dot-container {
+    position: absolute;
+    top: 10%;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .dot {
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Ensure images don't exceed the container width */
+  @media (max-width: 768px) {
+    .gallery-images img {
+      width: calc(70% - 10px);
+      margin-right: 5px;
+    }
+  }
+  
