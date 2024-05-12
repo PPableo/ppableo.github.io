@@ -1430,6 +1430,7 @@ hr {
 }
 
 .cta-button {
+  text-align: center;
   display: inline-block;
   padding: 12px 20px;
   background-color: #14cf93;
