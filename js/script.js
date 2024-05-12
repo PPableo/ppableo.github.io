@@ -165,10 +165,26 @@ function locoInt() {
 //   });
 // }
 
+function checkLastVisit() {
+  const lastVisit = localStorage.getItem('lastVisit');
+  const currentTime = new Date().getTime();
+  const timeSinceLastVisit = currentTime - lastVisit;
+
+  // Set a threshold for "long time" (e.g., 1 day)
+  const longTimeThreshold = 24 * 60 * 60 * 1000; // 1 day in milliseconds
+
+  if (!lastVisit || timeSinceLastVisit > longTimeThreshold) {
+    localStorage.setItem('lastVisit', currentTime); // Update last visit time
+    loaderAnimation(); // Trigger loader animation
+  } else {
+    animateHomepage(); // Proceed directly to homepage animation
+  }
+}
 
 revealToSpan();
 valueSetters();
 loaderAnimation();
-// locoInt();
+checkLastVisit();
+locoInt();
 // cardHoverEffect();
 // animateSvg();
