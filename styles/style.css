@@ -1683,11 +1683,23 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh; /* Make the footer span the full width */
+  height: 10vh;
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
 }
 
 footer p {
@@ -1696,7 +1708,7 @@ footer p {
   letter-spacing: 1px;
   margin: 0;
   font-size: clamp(1rem, 3vw, 2rem);
-  line-height: 1.5; /* Adjust line height as needed */
+  line-height: 1.5;
 }
 
 footer a:hover {
@@ -1706,6 +1718,6 @@ footer a:hover {
 footer .up-arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  padding-left: 5%;
-  width: auto; /* Adjust the size of the arrow icon */
+  width: 30px;
+  height: auto;
 }

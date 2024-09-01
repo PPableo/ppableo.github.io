@@ -2,9 +2,15 @@ footer {
   background-color: #a2a2a2;
   display: flex;
   justify-content: center;
-  position: relative;
   align-items: center;
-  height: 10vh; /* Make the footer span the full width */
+  height: 10vh;
+}
+
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; // This adds space between the text and the icon
 }
 
 footer p {
@@ -13,7 +19,7 @@ footer p {
   letter-spacing: 1px;
   margin: 0;
   font-size: clamp(1rem, 3vw, 2rem);
-  line-height: 1.5; /* Adjust line height as needed */
+  line-height: 1.5;
 }
 
 footer a:hover {
@@ -22,6 +28,6 @@ footer a:hover {
 
 footer .up-arrow {
   transform: rotate(180deg);
-  padding-left: 5%;
-  width: auto; /* Adjust the size of the arrow icon */
+  width: 30px; // Adjust this value to change the icon size
+  height: auto;
 }
