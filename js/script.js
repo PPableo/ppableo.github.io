@@ -25,9 +25,9 @@ function loaderAnimation() {
 
   tl.from("#loader .child", {
     x: "100%",
-    duration: 1.0,
+    duration: 1.5,
     stagger: 0.2,
-    ease: "power4.out"
+    ease: "Power3.easeInOut"
   });
 
   tl.to("#loader .child", {
