@@ -1066,7 +1066,8 @@ img {
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .container {
-    height: 100vh;
+    height: auto;
+    width: 100%;
   }
   .card__container {
     grid-template-columns: repeat(3, 1fr);
@@ -1082,10 +1083,10 @@ img {
 #projects {
   -webkit-transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
   transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
-  margin-top: 25%;
+  margin-top: 15%;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #f2f2f2;
 }
 #projects::before {
